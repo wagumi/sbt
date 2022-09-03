@@ -1,0 +1,77 @@
+// font icon
+@mixin font_icon($type: "") {
+
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    //font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+
+    // arrow-up
+    @if $type == "arrow-up" {
+        content: "\e5ce";
+    }
+    // arrow-right
+    @else if $type == "arrow-right" {
+        content: "\e5cc";
+    }
+    // arrow-bottom
+    @else if $type == "arrow-bottom" {
+        content: "\e5cf";
+    }
+    // arrow-left
+    @else if $type == "arrow-left" {
+        content: "\e5cb";
+    }
+    // close
+    @else if $type == "close" {
+        content: "\e5cd";
+    }
+    // check
+    @else if $type == "check" {
+        content: "\e5ca";
+    }
+    // mail
+    @else if $type == "mail" {
+        content: "\e158";
+    }
+    // file
+    @else if $type == "file" {
+        content: "\e873";
+    }
+    // list
+    @else if $type == "list" {
+        content: "\e896";
+    }
+    // calendar
+    @else if $type == "calendar" {
+        content: "\e616";
+    }
+    // link
+    @else if $type == "link" {
+        content: "\e157";
+    }
+    // download
+    @else if $type == "download" {
+        content: "\e2c4";
+    }
+    // display
+    @else if $type == "display" {
+        content: "\e30b";
+    }
+}

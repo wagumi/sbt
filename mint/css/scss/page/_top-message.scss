@@ -1,0 +1,26 @@
+// top-message
+.top-message {
+    // container
+    &__container {
+        @include container("default");
+    }
+    // content
+    &__content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    // heading
+    &__heading {
+        margin-bottom: 6.4rem;
+    }
+    // text
+    &__text {
+        color: $color_grey;
+        font-size: 1.6rem;
+    }
+    // guide
+    &__guide {
+        padding-top: 6.4rem;
+    }
+}

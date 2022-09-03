@@ -1,0 +1,50 @@
+// アイコン
+.about-icon {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto 0 auto;
+    //padding-top: 3.2rem;
+
+    // image
+    &__image {
+        @include responsive("pc") {
+            margin-bottom: 0;
+        }
+        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+        margin: 0 auto;
+        margin-bottom: 3.2rem;
+        overflow: hidden;
+        border-radius: 100%;
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    // content
+    &__content {
+        @include responsive("pc") {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: calc(100% - 200px);
+            padding-left: 2.4rem;
+            text-align: left;
+        }
+        width: 100%;
+        text-align: center;
+    }
+    &__content-name {
+        margin-bottom: 0.8rem;
+        font-weight: bold;
+        font-size: 3.2rem;
+    }
+    &__content-job {
+        margin-bottom: 3.2rem;
+        font-size: 1.6rem;
+    }
+}

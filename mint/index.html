@@ -1,0 +1,56 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WagumiSBT - 発行</title>
+    <meta name="description" content="WagumiSBTを発行するページです" />
+    <!-- ogp start -->
+    <meta property="og:url" content="https://ukishima.github.io/metadata/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="発行" />
+    <meta property="og:description" content="WagumiSBTを発行するページです" />
+    <meta property="og:site_name" content="WagumiSBT" />
+    <meta
+      property="og:image"
+      content="https://ukishima.github.io/metadata/img/wagumi_logo.png"
+    />
+    <!-- //ogp end -->
+    <link
+      rel="shortcut icon"
+      href="https://ukishima.github.io/metadata/img/wagumi_logo.png"
+    />
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main id="wrapper" class="wrapper">
+      <!-- /mainvisual -->
+      <section id="tx-guide" class="tx-guide">
+        <div class="mainvisual__container mainvisual">
+          <div class="mainvisual__text-main">Wagumi SBT</div>
+        </div>
+        <div class="tx-guide__container">
+          <div class="tx-guide__heading-sub">ADDRESS</div>
+          <div class="tx-guide__message" id="address">
+            YOUR ADDRESS
+          </div>
+          <div class="tx-guide__heading-sub">USER NAME</div>
+          <div class="tx-guide__message" id="username">YOUR NAME</div>
+          <div class="tx-guide__heading-sub">USER ID (TOKEN ID)</div>
+          <div class="tx-guide__message" id="userid">YOUR USER ID</div>
+
+          <div class="tx-guide__list">
+            <div class="tx-guide__list-item">
+              <a class="tx-guide__button" id="mintButton">発行する</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

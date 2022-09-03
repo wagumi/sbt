@@ -1,0 +1,263 @@
+.form {
+    $form_color_light: #cccccc;
+
+    &__form-group {
+        @include responsive("pc") {
+            display: flex;
+        }
+    }
+    &__form-group-title {
+        @include responsive("pc") {
+            width: 260px;
+            padding: 1.6rem;
+        }
+        padding:1rem;
+    }
+    &__form-group-content {
+        @include responsive("pc") {
+            width: calc(100% - 260px);
+            padding: 1.6rem;
+        }
+        padding:1rem;
+        display: flex;
+    }
+    %__label {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.08em;
+    }
+    &__label {
+        @extend %__label;
+        &--itemname {
+            @extend %__label;
+            color: $color_black;
+        }
+        &--required {
+            @extend %__label;
+            margin-left: 0.4rem;
+            padding: 0.4em 0.6em;
+            border-radius: 3px;
+            background: $color_light;
+            color: $color_grey;
+            font-size: 1.4rem;
+        }
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__list-item {
+        margin-bottom: 0.6rem;
+    }
+    %__input {
+        position: relative;
+        width: 100%;
+        padding: 0.4rem;
+    }
+    // 入力項目の基本設定
+    // (input,textarea,select)
+    %__input-item-base {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        border: 2px solid #efefef;
+        background: #ffffff;
+        font-weight: 400;
+        font-size: 1.6rem;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &::-ms-expand {
+            display: none;
+        }
+        &::placeholder {
+            color: $form_color_light;
+        }
+        /* 旧Edge対応 */
+        &::-ms-input-placeholder {
+            color: $form_color_light;
+        }
+        /* IE対応 */
+        &:-ms-input-placeholder {
+            color: $form_color_light;
+        }
+    }
+    // テキストの基本設定
+    %__input-item-text {
+        @extend %__input-item-base;
+        padding: 0.8rem 1.6rem;
+        transition: border-color 0.4s;
+        &:focus {
+            border: 2px solid $color_main;
+        }
+    }
+    // テキストエリアの基本設定
+    %__input-item-textarea {
+        @extend %__input-item-base;
+        padding: 1.6rem;
+        transition: border-color 0.4s;
+        &:focus {
+            border: 2px solid $color_main;
+        }
+    }
+    // 入力項目
+    &__input {
+        @extend %__input;
+        // テキスト
+        &--text {
+            @extend %__input;
+            input {
+                @extend %__input-item-text;
+            }
+        }
+        // テキスト（ハーフサイズ）
+        &--text-half {
+            @extend %__input;
+            max-width: 50%;
+            input {
+                @extend %__input-item-text;
+            }
+        }
+        // テキストエリア
+        &--textarea {
+            @extend %__input;
+            textarea {
+                @extend %__input-item-textarea;
+            }
+        }
+        // テキストエリア（ハーフサイズ）
+        &--textarea-half {
+            @extend %__input;
+            max-width: 50%;
+            textarea {
+                @extend %__input-item-textarea;
+            }
+        }
+        // セレクトボックス
+        &--select {
+            @extend %__input;
+            max-width: 300px;
+            select {
+                @extend %__input-item-base;
+                padding: 0.8rem 2.4rem 0.8rem 1.6rem;
+                cursor: pointer;
+            }
+            &::after {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                right: 12px;
+                bottom: 0;
+                z-index: 1;
+                width: 0;
+                height: 0;
+                margin: auto 0;
+                border-width: 6px 4px 0;
+                border-style: solid;
+                border-color: $form_color_light transparent transparent transparent;
+                content: "";
+                pointer-events: none;
+            }
+        }
+        // ラジオボタン
+        &--radio {
+            @extend %__input;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            .radio-input {
+                @include visually_hidden();
+            }
+            .radio-icon {
+                display: inline-block;
+                position: relative;
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-right: 0.8rem;
+                border: 1px solid $form_color_light;
+                border-radius: 50%;
+                &:before {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin: auto;
+                    border-radius: 50%;
+                    background: $color_main;
+                    content: "";
+                    transition: opacity 0.4s;
+                }
+            }
+            .radio-text {
+                color: $form_color_light;
+                transition: color 0.4s;
+            }
+            // ラジオボタンがチェックされた時
+            .radio-input:checked + .radio-icon {
+                border-color: $color_main;
+                &:before {
+                    opacity: 1;
+                }
+            }
+            .radio-input:checked ~ .radio-text {
+                color: $color_main;
+            }
+        }
+        // チェックボックス
+        &--check {
+            @extend %__input;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            .check-input {
+                @include visually_hidden();
+            }
+            .check-icon {
+                display: inline-block;
+                position: relative;
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-right: 0.8rem;
+                border: 2px solid #cccccc;
+                &:after {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0.5rem;
+                    left: 0.3rem;
+                    width: 1.6rem;
+                    height: 0.8rem;
+                    border-bottom: 2px solid transparent;
+                    border-left: 2px solid transparent;
+                    content: "";
+                    transition: opacity 0.4s;
+                }
+            }
+            .check-text {
+                color: $form_color_light;
+                transition: color 0.4s;
+            }
+            // チェックボックスがチェックされた時
+            .check-input:checked + .check-icon {
+                border-color: $color_main;
+                &:after {
+                    opacity: 1;
+                    transform: rotate(-45deg);
+                    border-bottom: 2px solid $color_main;
+                    border-left: 2px solid $color_main;
+                }
+            }
+            .check-input:checked ~ .check-text {
+                color: $color_main;
+            }
+        }
+    }
+}

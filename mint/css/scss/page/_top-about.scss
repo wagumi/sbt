@@ -1,0 +1,39 @@
+// top-about
+.top-about{
+    // container
+    &__container{
+        @include container("default");
+    }
+    // heading
+    &__heading {
+        margin-bottom: 6.4rem;
+    }
+    // heading-sub
+    &__heading-sub {
+        margin: 0 0 1.6rem 0;
+        padding: 0 0 0.4rem 0;
+        border-bottom: 2px solid $color_black;
+        color: $color_black;
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
+    // profile
+    &__profile {
+        margin-bottom: 6.4rem;
+    }
+    // list
+    &__list {
+        @media (min-width: 992px) {
+            display: flex;
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+    }
+    &__list-item {
+        margin: 2.4rem 0 0 0;
+        @media (min-width: 992px) {
+            width: calc(100% / 2 - 30px);
+            margin: 15px;
+        }
+    }
+}

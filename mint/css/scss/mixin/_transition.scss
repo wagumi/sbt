@@ -1,0 +1,13 @@
+// transition
+@mixin transition($modifer: "default") {
+    $list_prefix: -webkit-, -moz-, -ms-, -o-, "";
+    @each $prefix in $list_prefix {
+        @if $modifer == default {
+            // デフォルト
+            #{$prefix}transition: all 0.2s;
+        } @else if $modifer == pagination {
+            // ページネーション
+            #{$prefix}transition: background-color 0.2s;
+        }
+    }
+}

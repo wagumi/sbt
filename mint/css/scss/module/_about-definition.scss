@@ -1,0 +1,20 @@
+// 定義リスト
+.about-definition {
+    display: flex;
+    flex-wrap: wrap;
+    &__term {
+        width: 40%;
+        margin-bottom: .8rem;
+        font-weight: 700;
+        font-size: 1.6rem;
+        &:after {
+            content: "：";
+        }
+    }
+    &__description {
+        width: 60%;
+        margin-bottom: .8rem;
+        font-size: 1.6rem;
+        text-align: right;
+    }
+}

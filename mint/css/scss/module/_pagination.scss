@@ -1,0 +1,123 @@
+// pagination
+.pagination {
+
+    $link_color: $color_black;
+    $link_color_active: $color_white;
+    $link_bg_color: $color_grey_light;
+    $link_bg_color_active: $color_main;
+
+    // ページネーションのリスト部分
+    &__list,
+    .page-numbers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__list-item,
+    .page-numbers > li {
+        margin: 0.3rem;
+    }
+
+    // ページネーション要素の基本設定
+    @mixin pagination_item_base() {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem 1.6rem;
+        border-radius: 6px;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    // リンク
+    %__link {
+        @include transition("pagination");
+        @include pagination_item_base();
+        cursor: pointer;
+    }
+    &__link,
+    .page-numbers > li > a {
+        @extend %__link;
+        background-color: $link_bg_color;
+        color: $link_color;
+        &:hover,
+        &:focus {
+            background-color: $link_bg_color_active;
+            color: $link_color_active;
+        }
+        // 前へボタン
+        &--prev,
+        &.prev {
+            @extend %__link;
+            min-width: 12rem;
+            background-color: $link_bg_color;
+            color: $link_color;
+            &:before {
+                @include font_icon("arrow-left");
+                display: inline-block;
+                margin-right: 0.6rem;
+                transition: transform 0.2s;
+            }
+            &:hover,
+            &:focus {
+                background-color: $link_bg_color_active;
+                color: $link_color_active;
+                &:before {
+                    transform: translateX(-4px);
+                }
+            }
+        }
+        // 次へボタン
+        &--next,
+        &.next {
+            @extend %__link;
+            min-width: 12rem;
+            background-color: $link_bg_color;
+            color: $link_color;
+            &:after {
+                @include font_icon("arrow-right");
+                display: inline-block;
+                margin-left: 0.6rem;
+                transition: transform 0.2s;
+            }
+            &:hover,
+            &:focus {
+                background-color: $link_bg_color_active;
+                color: $link_color_active;
+                &:after {
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+
+    // テキスト
+    %__text {
+        @include pagination_item_base();
+    }
+    &__text,
+    .page-numbers > li > span {
+        @extend %__text;
+        background-color: $link_bg_color;
+        color: $link_color;
+        // 現在ページ
+        &--current,
+        &.current {
+            @extend %__text;
+            background-color: $link_bg_color_active;
+            color: $color_white;
+        }
+        // ドット表示
+        &--dots,
+        &.dots {
+            @extend %__text;
+            background-color: $link_bg_color;
+            color: $link_color;
+        }
+    }
+}

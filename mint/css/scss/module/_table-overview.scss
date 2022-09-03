@@ -1,0 +1,18 @@
+// table-overview
+.table-overview {
+    width: 100%;
+    line-height: 1.8;
+    text-align: left;
+    tr {
+        th {
+            width: 16rem;
+            padding: .8rem;
+            vertical-align: top;
+        }
+        td {
+            width: calc(100% - 16rem);
+            padding: .8rem 1.6rem;
+            vertical-align: top;
+        }
+    }
+}

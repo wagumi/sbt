@@ -1,0 +1,19 @@
+// button-guide
+.button-guide {
+    @include button("block");
+    display: flex;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1.6rem;
+    border: none;
+    border-radius: 8px;
+    background: $color_grey_light;
+    color: $color_black;
+    font-weight: 400;
+    font-size: 1.6rem;
+    &:hover, &:focus {
+        background: $color_main;
+        color: #ffffff;
+    }
+}

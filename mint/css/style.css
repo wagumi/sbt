@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/*
+ * HTML
+ * -------------------------------------------------------------------
+ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3",
+    Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6em;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+
+/*
+ * wrapper
+ * -------------------------------------------------------------------
+ */
+.wrapper {
+  display: block;
+  margin: 0px auto;
+  padding: 0px;
+  min-height: 80vh;
+  background: #e8dfcc;
+}
+
+.wrapper > section:nth-child(even) {
+  background: #fafafa;
+}
+
+/* A Modern CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.mainvisual {
+  position: relative;
+  background-image: url("../img/header.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainvisual::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
+}
+
+.mainvisual__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  height: 50vh;
+  padding-top: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.mainvisual__text-main {
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #343333;
+  line-height: 1;
+  z-index: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .mainvisual__text-main {
+    font-size: 5.6rem;
+  }
+}
+
+.tx-guide {
+  padding: 1.8rem 1.6rem;
+}
+
+.tx-guide__container {
+  box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1.8rem 15px;
+  background: #f4f1ef;
+}
+
+.tx-guide__heading {
+  margin: 0 0 4.8rem 0;
+  text-align: center;
+}
+
+.tx-guide__heading-main {
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  font-size: 4.8rem;
+}
+
+.tx-guide__heading-main:after {
+  display: block;
+  max-width: 300px;
+  margin: 1.6rem auto 1.6rem auto;
+  border-bottom: 3px solid #222222;
+  content: "";
+}
+
+.tx-guide__heading-sub {
+  margin: 3.6rem 0 0 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.tx-guide__message {
+  margin: 0.6rem auto;
+  color: #0b006d;
+  font-size: 1.8rem;
+  text-align: left;
+  max-width: 500px;
+  overflow-wrap: break-word;
+}
+
+.tx-guide__message:after {
+	font-family: "Material Icons";
+  margin:0rem 0.6rem;
+	content: "\e14d";
+}
+
+.tx-guide__list-item {
+  margin: 3.6rem 0 2.4rem 0;
+  text-align: center;
+}
+
+.tx-guide__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s, text-shadow 0.2s, background-color 0.2s,
+    border-color 0.2s, opacity 0.2s;
+  width: 100%;
+  max-width: 480px;
+  padding: 1.6rem;
+  border: 1px solid #034a4b;
+  border-radius: 50px;
+  background: #07b5b8;
+  color: #ffffff;
+}
+
+.tx-guide__button:hover {
+  background: #088183;
+}
