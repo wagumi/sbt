@@ -1,0 +1,41 @@
+.mainvisual {
+    position: relative;
+    // 背景画像
+    background-image: url("../img/mainvisual.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // 背景画像に半透明のレイヤーを被せる
+    &::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background-color: rgba($color_white, 0.3);
+        content: "";
+    }
+    // container
+    &__container {
+        @include container("mainvisual");
+        position: relative;
+        z-index: 1;
+    }
+    // text
+    &__text-main {
+        @include font_design();
+        @include responsive("pc") {
+            font-size: 5.6rem;
+        }
+        font-weight: 700;
+        font-size: 4.0rem;
+        line-height: 1;
+    }
+    &__text-sub {
+        padding-top: 1.6rem;
+        color: $color_black;
+        font-size: 1.6rem;
+    }
+}

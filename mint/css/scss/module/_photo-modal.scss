@@ -1,0 +1,102 @@
+.photo-modal {
+    $selector: #{&};
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $z_index_photo_modal;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    // アニメーション設定
+    animation-duration: var(--photo-modal-duration);
+    animation-fill-mode: forwards;
+    &[data-open="true"] {
+        animation-name: modal-photo-open;
+    }
+    &[data-open="false"] {
+        animation-name: modal-photo-close;
+    }
+    // コンテナ―
+    &__container {
+        max-width: 800px;
+        max-height: 80%;
+        margin: auto;
+        overflow: auto;
+    }
+    &__image {
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+    // ボタン
+    %__button {
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        color: #ffffff;
+        cursor: pointer;
+        transition: color 0.4s;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &:hover,
+        &:focus {
+            color: darken(#ffffff, 5%);
+            outline: none;
+        }
+        &::before {
+            font-size: 2.5rem;
+        }
+    }
+    &__button {
+        @extend %__button;
+        // 閉じる
+        &--close {
+            @extend %__button;
+            top: 0;
+            right: 0;
+            &::before {
+                @include font_icon("close");
+            }
+        }
+        // 前に戻る
+        &--prev {
+            @extend %__button;
+            top: 50%;
+            left: 0;
+            &::before {
+                @include font_icon("arrow-left");
+            }
+        }
+        // 次へ進む
+        &--next {
+            @extend %__button;
+            top: 50%;
+            right: 0;
+            &::before {
+                @include font_icon("arrow-right");
+            }
+        }
+    }
+    // 背景オーバーレイ
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: rgba(#000000, 0.85);
+    }
+}

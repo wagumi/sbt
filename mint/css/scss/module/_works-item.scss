@@ -1,0 +1,51 @@
+.works-item {
+    $selector: #{&};
+
+    @include shadow("item");
+    @include transition();
+    display: block;
+    max-width: 600px;
+    //height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    background: $color_white;
+    color: $color_black;
+    cursor: pointer;
+    // サムネイル部分
+    &__thumbnail {
+        overflow: hidden;
+    }
+    &__thumbnail-image {
+        @include transition();
+        @include responsive_image();
+    }
+    // メイン部分
+    &__content {
+        padding: 0.8rem;
+        @media (min-width: 992px) {
+            padding: 1.6rem;
+        }
+    }
+    &__content-title {
+        color: $color_black;
+        font-weight: 400;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    // ホバー
+    &:hover {
+        @include shadow("item-hover");
+        #{$selector}__thumbnail-image {
+            transform: scale(1.1);
+        }
+        #{$selector}__button-more {
+            background: $color_black;
+            color: $color_white;
+            &:after {
+                transform: translateX(4px);
+            }
+        }
+    }
+}

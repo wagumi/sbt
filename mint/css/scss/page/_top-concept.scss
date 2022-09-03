@@ -1,0 +1,94 @@
+// top-concept
+.top-concept {
+    $layout: #{&}__layout;
+    position: relative;
+    margin: 0 auto;
+    // container
+    &__container {
+        @include container("default");
+    }
+    %__layout {
+        @include responsive("pc") {
+            display: flex;
+        }
+    }
+    &__layout {
+        @extend %__layout;
+        &--left {
+            @extend %__layout;
+        }
+        &--right {
+            @extend %__layout;
+            flex-direction: row-reverse;
+        }
+    }
+    &__layout-content {
+        // .layoutのModifierに応じて
+        // スタイルを変更する
+        #{$layout}--left & {
+            @include responsive("pc") {
+                width: 60%;
+                margin-bottom: 0;
+                padding-right: 2.4rem;
+            }  margin-bottom: 2.4rem;
+        }
+        #{$layout}--right & {
+            @include responsive("pc") {
+                width: 60%;
+                margin-bottom: 0;
+                padding-left: 2.4rem;
+            }  margin-bottom: 2.4rem;
+        }
+    }
+    &__layout-image {
+        @include responsive("pc") {
+            width: 40%;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            border-radius: 1.6rem;
+        }
+    }
+
+    // heading
+    &__heading {
+        margin-bottom: 3.2rem;
+    }
+    // text
+    &__text {
+        color: $color_grey;
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+    // link
+    &__link {
+        $circle_width: 5.6rem;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        margin-right: 2.4rem;
+        margin-left: 3.6rem;
+        padding: 3.6rem 0;
+        color: $color_black;
+        transition: padding-left .2s;
+        &::before {
+            display: block;
+            position: absolute;
+            left: -3.6rem;
+            z-index: -1;
+            width: 5.6rem;
+            height: 5.6rem;
+            border-radius: 100%;
+            background: $color_main;
+            content: "";
+        }
+        &:hover, &:focus {
+            padding-left: .4rem;
+            &::before {
+                background: darken($color_main,3%);
+            }
+        }
+    }
+}

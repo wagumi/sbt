@@ -1,0 +1,20 @@
+// shadow
+@mixin shadow($modifer: "default") {
+    @if $modifer == "default" {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    } @else if $modifer == "header" {
+        box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.1);
+    } @else if $modifer == "item" {
+        box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.15);
+    } @else if $modifer == "item-hover" {
+        box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.3);
+    } @else if $modifer == "button" {
+        box-shadow: 0 0 .8rem 0 rgba(0, 0, 0, 0.15);
+    } @else if $modifer == "button-hover" {
+        box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.15);
+    } @else if $modifer == "contact-guide" {
+        box-shadow: 0 0 .8rem 0 rgba(0, 0, 0, 0.15);
+    } @else {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    }
+}

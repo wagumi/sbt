@@ -1,0 +1,43 @@
+.nav-pagetop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    z-index: -1000;
+    width: 70px;
+    height: 70px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #fff;
+    background: $color_main;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    @include shadow();
+    @include transition();
+    &.active{
+        opacity: 1;
+        z-index: 1000;
+    }
+    &:before{
+        display: block;
+        @include font_icon("arrow-up");
+        @include transition();
+    }
+    &:after{
+        content: 'PAGETOP';
+        display:block;
+        padding:4px 0px;
+    }
+    &:hover{
+        background: darken($color_main,5%);
+        @include shadow(hover);
+        &:before{
+            transform:translateY(-4px);                
+        }
+    }
+}

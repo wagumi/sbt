@@ -1,0 +1,32 @@
+// top-service
+.top-service {
+    // container
+    &__container{
+        @include container("default");
+    }
+    // heading
+    &__heading {
+        margin-bottom:6.4rem;
+    }
+    // list
+    &__list {
+        background:#fff;
+        box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.15);
+        @include responsive("pc") {
+            display: flex;
+            padding:3.2rem;
+        }
+    }
+    &__list-item {
+        padding:2.4rem 1.6rem;
+        @include responsive("pc") {
+            &:not(:first-child){
+                border-left:1px dashed $color_grey;
+            }
+        }
+    }
+    // guide
+    &__guide {
+        padding-top:6.4rem;
+    }
+}

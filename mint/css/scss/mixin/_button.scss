@@ -1,0 +1,25 @@
+// button
+@mixin button($type: "default") {
+    @if $type == "default" {
+        display: inline-flex;
+    }@else if $type == "block" {
+        display: flex;
+    }@else{
+        display: inline-flex;
+    }
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition:
+        box-shadow .2s,
+        text-shadow .2s,
+        background-color .2s, 
+        border-color .2s,
+        opacity .2s;
+}

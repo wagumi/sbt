@@ -1,0 +1,6 @@
+// responsive image
+@mixin responsive_image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,57 @@
+// スキルセット
+.skillset {
+    $height: 1.6rem;
+    // item
+    &__item {
+        display: flex;
+        align-items: center;
+        &:not(:first-child) {
+            margin-top: 1.6rem;
+        }
+    }
+    // image
+    &__image {
+        display: block;
+        width: 6.4rem;
+        height: 6.4rem;
+        margin-right: 1.6rem;
+        border-radius: 100%;
+    }
+    // content
+    &__content {
+        display: block;
+        width: 100%;
+    }
+    // content-title
+    &__content-title {
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+    // content-bar
+    %__content-bar {
+        height: $height;
+        margin-top: .8rem;
+        overflow: hidden;
+        border-radius: $height / 2;
+        box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .1);
+        &::after {
+            display: block;
+            height: $height;
+            border-radius: $height / 2;
+            background: $color_main;
+            content: "";
+        }
+    }
+    &__content-bar {
+        @extend %__content-bar;
+        @for $i from 1 through 10 {
+            $size: $i * 10;
+            &--#{$size} {
+                @extend %__content-bar;
+                &::after {
+                    width: #{$size + "%"};
+                }
+            }
+        }
+    }
+}

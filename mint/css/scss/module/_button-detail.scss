@@ -1,0 +1,60 @@
+// button-detail
+.button-detail {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    margin: 0 auto;
+    // button
+    %__button {
+        @include button("block");
+        margin-bottom: 2.4rem;
+        padding: 1.6rem 2.4rem;
+        border-radius: 0.4rem;
+        background: $color_grey_light;
+        color: $color_black;
+        &:hover,&:focus {
+            background: $color_main;
+            color: $color_white;
+        }
+    }
+    &__button {
+        @extend %__button;
+        // 戻るボタン
+        &--back {
+            @extend %__button;
+            width: 100%;
+            &:before {
+                @include font_icon("list");
+                margin-right: 0.8rem;
+            }
+        }
+        // 前へボタン
+        &--prev {
+            @extend %__button;
+
+            @include responsive("pc") {
+                width: calc(50% - 15px);
+                margin-right: 15px;
+            }
+            width: 100%;
+            &:before {
+                @include font_icon("arrow-left");
+                margin-right: 0.8rem;
+            }
+        }
+        // 次へボタン
+        &--next {
+            @extend %__button;
+
+            @include responsive("pc") {
+                width: calc(50% - 15px);
+                margin-left: 15px;
+            }
+            width: 100%;
+            &:after {
+                @include font_icon("arrow-right");
+                margin-left: 0.8rem;
+            }
+        }
+    }
+}

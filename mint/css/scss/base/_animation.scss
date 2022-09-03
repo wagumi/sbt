@@ -1,0 +1,57 @@
+@keyframes menu-container-appeared {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes menu-container-leaved {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes menu-overlay-appeared {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes menu-overlay-leaved {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/*
+ * MODAL PHOTO
+ * -------------------------------------------------------------------
+ */
+// 画像モーダル表示
+@keyframes modal-photo-open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+// 画像モーダル非表示
+@keyframes modal-photo-close {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

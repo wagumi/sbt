@@ -1,0 +1,30 @@
+// top-works
+.top-works {
+    // container
+    &__container {
+        @include container("default");
+    }
+    // heading
+    &__heading {
+        margin-bottom: 6.4rem;
+    }
+    // list
+    &__list {
+        margin: 0 -15px 0 -15px;
+        @media (min-width: 992px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &__list-item {
+        margin: 15px 15px 4.8rem 15px;
+        @media (min-width: 992px) {
+            width: calc(100% / 3 - 30px);
+            margin: 15px;
+        }
+    }
+    // guide
+    &__guide {
+        padding-top: 6.4rem;
+    }
+}

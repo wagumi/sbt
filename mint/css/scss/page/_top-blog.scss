@@ -1,0 +1,25 @@
+// top-blog
+.top-blog {
+    background: #fafafa;
+    // container
+    &__container {
+        @include container("default");
+    }
+    // heading
+    &__heading {
+        margin-bottom: 6.4rem;
+    }
+    // list
+    &__list {
+        margin: 0;
+    }
+    &__list-item {
+        &:not(:last-child) {
+            margin: 0 0 4.8rem 0;
+        }
+    }
+    // guide
+    &__guide {
+        padding-top: 6.4rem;
+    }
+}
