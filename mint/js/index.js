@@ -1,5 +1,5 @@
 const url = new URL(window.location.href);
-const owner = url.searchParams.get("owner");
+const address = url.searchParams.get("address");
 const username = url.searchParams.get("username");
 const userid = url.searchParams.get("userid");
 const salt = url.searchParams.get("salt");
@@ -12,8 +12,8 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 const polygonChainId = 80001;
 
 const getParams = async () => {
-	if (owner && userid && salt && signature) {
-		document.getElementById("address").textContent = owner;
+	if (address && userid && salt && signature) {
+		document.getElementById("address").textContent = address;
 		document.getElementById("username").textContent = username;
 		document.getElementById("userid").textContent = userid;
 		mintButton.ariaDisabled = null;
@@ -37,9 +37,9 @@ const connect = async () => {
 		return false;
 	}
 
-	if (accounts[0] !== owner.toLowerCase()) {
-		document.getElementById("address").textContent = owner;
-		alert(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${owner}です。`);
+	if (accounts[0] !== address.toLowerCase()) {
+		document.getElementById("address").textContent = address;
+		alert(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${address}です。`);
 		return false;
 	}
 
@@ -167,7 +167,7 @@ const mint = async () => {
 			signer,
 		);
 	
-		const tx = await contract.mint(owner, userid, salt, signature);
+		const tx = await contract.mint(address, userid, salt, signature);
 	}
 	catch(e){
 		console.error(e);
