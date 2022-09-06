@@ -109,6 +109,12 @@ userNameArea.addEventListener("click", async () => {
 	navigator.clipboard.writeText(content);
 });
 
+const logsArea = document.getElementById("logs");
+logsArea.addEventListener("click", async () => {
+	const content = document.getElementById("logs").innerHTML;
+	navigator.clipboard.writeText(content);
+});
+
 const mintButton = document.getElementById("mintButton");
 mintButton.addEventListener("click", async () => {
 	if (mintButton.ariaDisabled === null) {
