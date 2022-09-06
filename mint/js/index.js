@@ -113,10 +113,11 @@ const mintButton = document.getElementById("mintButton");
 mintButton.addEventListener("click", async () => {
 	if (mintButton.ariaDisabled === null) {
 		try {
-			mintButton.ariaDisabled = "True";
+			mintButton.ariaDisabled = "connect";
 			const result = await connect();
 			console.log(result);
 			if (result) {
+				mintButton.ariaDisabled = "mint";
 				await mint();
 			}
 		} catch {
@@ -158,7 +159,7 @@ const mint = async () => {
 		},
 	];
 
-	try{
+	try {
 		const signer = provider.getSigner();
 
 		const contract = new ethers.Contract(
@@ -166,16 +167,27 @@ const mint = async () => {
 			abi,
 			signer,
 		);
-	
+
+		logs("SBTを発行します");
 		const tx = await contract.mint(address, userid, salt, signature);
-	}
-	catch(e){
-		console.error(e);
-		if(debug){
+		logs(`トランザクションを開始しました<br><a href="https://mumbai.polygonscan.com/tx/${tx.hash}" target="_blank">https://mumbai.polygonscan.com/tx/${tx.hash}</a><br>`);
+		const tr = await tx.wait();
+		logs("SBTが発行されました");
+	} catch (e) {
+			logs("SBT発行処理を中止しました");
+		if (debug) {
 			alert(e);
 		}
 	}
 };
+
+const logs = (message) =>{
+	document.getElementById("logs").insertAdjacentHTML(
+		"afterbegin",
+		`${message}<br>`,
+	);
+
+}
 
 (async () => {
 	await getParams();
