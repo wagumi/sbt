@@ -9,7 +9,7 @@ const debug = url.searchParams.get("debug");
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
 //const chainId = 137;
-const polygonChainId = 80001;
+const polygonChainId = 137;
 
 const getParams = async () => {
 	if (address && userid && salt && signature) {
@@ -44,7 +44,7 @@ const connect = async () => {
 	}
 
 	try {
-		/*
+		
 		await ethereum.request({
 			method: "wallet_addEthereumChain",
 			params: [
@@ -61,7 +61,7 @@ const connect = async () => {
 				},
 			],
 		});
-*/
+/*
 		const result = await ethereum.request({
 			method: "wallet_addEthereumChain",
 			params: [
@@ -78,6 +78,7 @@ const connect = async () => {
 				},
 			],
 		});
+*/
 	} catch (e) {
 		console.log(e);
 	}
@@ -126,7 +127,8 @@ mintButton.addEventListener("click", async () => {
 				mintButton.ariaDisabled = "mint";
 				await mint();
 			}
-		} catch {
+		} catch (e){
+			console.log(e);
 		} finally {
 			mintButton.ariaDisabled = null;
 		}
@@ -169,14 +171,14 @@ const mint = async () => {
 		const signer = provider.getSigner();
 
 		const contract = new ethers.Contract(
-			"0xc0B3483bD8B2740b7BC070615FEb9988F793d621",
+			"0x32ae959370386ca0402145b1c207da484c703fbf",
 			abi,
 			signer,
 		);
-
+		
 		logs("SBTを発行します");
 		const tx = await contract.mint(address, userid, salt, signature);
-		logs(`トランザクションを開始しました<br><a href="https://mumbai.polygonscan.com/tx/${tx.hash}" target="_blank">https://mumbai.polygonscan.com/tx/${tx.hash}</a><br>`);
+		logs(`トランザクションを開始しました<br><a href="https://polygonscan.com/tx/${tx.hash}" target="_blank">https://polygonscan.com/tx/${tx.hash}</a><br>`);
 		const tr = await tx.wait();
 		logs("SBTが発行されました");
 	} catch (e) {
