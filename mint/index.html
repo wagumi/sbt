@@ -29,7 +29,12 @@
 
       @font-face {
         font-family: 'Alata';
-        src: local(./fonts/Alata-Regular.ttf) !important;
+        src: url(./fonts/Alata-Regular.ttf)  format("truetype");
+        src: url(./fonts/Alata-Regular.woff) format('woff');
+      }
+
+      * {
+        font-family: 'Alata';
       }
 
       #header {
@@ -231,7 +236,7 @@
 
           <div class="tx-guide__input_wrapper">
 
-            <h2 style="font-family: 'Alata'">WAGUMI SBT Mint</h2>
+            <h2>WAGUMI SBT Mint</h2>
 
             <div class="tx-guide__input">
               <div class="tx-guide__input_inner">
