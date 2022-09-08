@@ -8,7 +8,6 @@ const debug = url.searchParams.get("debug");
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
-//const chainId = 137;
 const polygonChainId = 137;
 
 const getParams = async () => {
