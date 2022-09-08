@@ -38,11 +38,21 @@
       }
 
       #header {
-        padding : 24px;
+        padding : 0;
         background-color: #f5f4ef;
+        height: 100px;
+      }
+      #header .header_inner {
+        position: relative;
+        margin: 0 auto;
+        max-width: 1280px;
       }
       #header .logo {
+        position: absolute;
+        top: 4px;
+        left: 16px;
         display: inline-block;
+        height: 80px;
       }
       #header .logo .pic {
         display: inline-block;
@@ -52,12 +62,18 @@
       }
       #header .logo .arrow {
         display: inline-block;
+        vertical-align: middle;
+        height: 80px;
       }
       #header .logo .arrow svg {
         width: 16px;
       }
       #header .navi {
+        position: absolute;
+        right: 16px;
+        top: 30px;
         display: inline-block;
+        vertical-align: middle;
       }
       #header .navi svg {
         height: 32px;
@@ -84,9 +100,13 @@
         padding: 0;
       }
       .navi ul li {
-        margin-left: 128px;
+        margin-left: 12px;
         display: inline-block;
         list-style: none;
+      }
+
+      #footer .navi ul li {
+        margin-left: 24px;
       }
       .navi ul li:first-child {
         margin-left: 0;
@@ -111,7 +131,7 @@
       }
       .mainvisual__text-main {
         font-family: Alata;
-        font-size: 9rem;
+        font-size: 7rem;
         font-weight: 400;
         color: #D35007;
 
@@ -144,7 +164,7 @@
 
       .tx-guide__input_wrapper {
         text-align: center;
-        padding: 64px;
+        padding: 16px;
       }
       .tx-guide__manual_wrapper {
         text-align: center;
@@ -209,9 +229,9 @@
         display: block;
         text-align: center;
         margin: 0 auto;
-        font-size: 2.4rem;
-        padding: 20px 24px 20px 18px;
-        width: 400px;
+        font-size: 2rem;
+        padding: 20px 8px 20px 6px;
+        width: 300px;
         color: #ffffff;
         border: solid 5px #ffffff;
       }
@@ -219,6 +239,7 @@
         background-color: #f79a69;
       }
       a.tx-guide__button_orange span.arrow {
+        display: none;
         position: absolute;
         width: 20px;        
         bottom: 25px;
@@ -226,6 +247,36 @@
       }
       a.tx-guide__button_orange.white_paper span.arrow {
         right: 90px;
+      }
+
+      @media screen and (min-width:480px) { 
+        .mainvisual__text-main {
+          font-size: 9rem;
+        }
+        .tx-guide__input_wrapper {
+          padding: 64px;
+        }
+        a.tx-guide__button_orange {
+          padding: 20px 24px 20px 18px;
+          font-size: 2.4rem;
+          width: 400px;
+        }
+        a.tx-guide__button_orange span.arrow {
+          display: block;
+        }
+      }
+
+      @media screen and (min-width:768px) { 
+        .navi ul li {
+          margin-left: 96px;
+        }
+        #footer .navi ul li {
+          margin-left: 128px;
+        }
+        #footer .navi ul li:first-child {
+          margin-left: 0;
+        }
+
       }
 
 </style>
@@ -236,7 +287,8 @@
       <!-- /mainvisual -->
        
       <div id="header">
-        <div class="logo">
+        <div class="header_inner">
+          <div class="logo">
           <div class="pic"><a href="#"><img src="./img/logo_wagumi.png" /></a></div>
           <div class="arrow"><svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 12.768C25.3333 13.5378 25.3333 15.4623 24 16.2321L3.75 27.9234C2.41666 28.6932 0.749999 27.7309 0.749999 26.1913L0.75 2.80865C0.75 1.26905 2.41667 0.306805 3.75 1.07661L24 12.768Z" fill="#D35007"/>
@@ -257,6 +309,7 @@
           </ul>
         </div>
       </div>
+    </div>
 
       <section id="tx-guide" class="tx-guide">
         <div class="mainvisual__container mainvisual">
