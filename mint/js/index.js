@@ -182,6 +182,9 @@ const mint = async () => {
 		const tr = await tx.wait();
 		logs("SBTが発行されました");
 	} catch (e) {
+			if(e.message.indexOf("MINTED ALREADY") >= 0) {
+				logs('<font color="red">既にSBTが発行されています</font>');				
+			}
 			logs("SBT発行処理を中止しました");
 		if (debug) {
 			logs(e);
