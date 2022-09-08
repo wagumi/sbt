@@ -171,7 +171,7 @@ const mint = async () => {
 		const signer = provider.getSigner();
 
 		const contract = new ethers.Contract(
-			"0x32ae959370386ca0402145b1c207da484c703fbf",
+			"0xef756b67b90026F91D047D1b991F87D657309A42",
 			abi,
 			signer,
 		);
@@ -184,6 +184,7 @@ const mint = async () => {
 	} catch (e) {
 			logs("SBT発行処理を中止しました");
 		if (debug) {
+			logs(e);
 			alert(e);
 		}
 	}
