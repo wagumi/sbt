@@ -78,6 +78,7 @@ const connect = async () => {
 			],
 		});
 */
+	location.reload();
 	} catch (e) {
 		console.log(e);
 	}
