@@ -1,6 +1,6 @@
 let url = new URL(window.location.href);
 const address = url.searchParams.get("address");
-const username = url.searchParams.get("username");
+const username = decodeURI(url.searchParams.get("username"));
 const userid = url.searchParams.get("userid");
 const salt = url.searchParams.get("salt");
 const signature = url.searchParams.get("signature");
