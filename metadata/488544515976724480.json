@@ -8,6 +8,18 @@
     "sns": {},
     "contributions": [
       {
+        "id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
+        "last_edited_time": "2022-09-09T10:04:00.000Z",
+        "name": "Wagumi SBTを発行",
+        "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
+        "description": "Wagumi SBTを申請し、発行されました。",
+        "date": {
+          "start": "2022-09-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      {
         "id": "d64a50f4-f273-4084-a2dd-3d7720725946",
         "last_edited_time": "2022-09-08T23:59:00.000Z",
         "name": "WG-TOKEN に参加",
