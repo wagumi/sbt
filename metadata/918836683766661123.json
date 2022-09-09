@@ -8,6 +8,18 @@
     "sns": {},
     "contributions": [
       {
+        "id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
+        "last_edited_time": "2022-09-09T23:01:00.000Z",
+        "name": "IVS那覇に参加",
+        "image": "https://www.ivs.events/wp-content/uploads/2022/05/ivs-mv-2-1536x864.jpg",
+        "description": "IVS那覇に参加しました。",
+        "date": {
+          "start": "2022-07-06",
+          "end": "2022-07-08",
+          "time_zone": null
+        }
+      },
+      {
         "id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
         "last_edited_time": "2022-09-09T13:54:00.000Z",
         "name": "和組東京オフ会に参加",
@@ -16,18 +28,6 @@
         "date": {
           "start": "2022-09-09",
           "end": null,
-          "time_zone": null
-        }
-      },
-      {
-        "id": "d64a50f4-f273-4084-a2dd-3d7720725946",
-        "last_edited_time": "2022-09-08T23:59:00.000Z",
-        "name": "WG-TOKEN に参加",
-        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4d09e9cc-0595-4e3b-bcff-66fd69dfe467/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220706%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220706T051403Z&X-Amz-Expires=86400&X-Amz-Signature=2de08251586942afb6616ee76c42416220a9fb57a2e3750cc42d537f6dcf4fce&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject",
-        "description": "地獄のような作業をおこなってくれました。",
-        "date": {
-          "start": "2022-07-01",
-          "end": "2022-09-30",
           "time_zone": null
         }
       }
