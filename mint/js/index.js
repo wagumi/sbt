@@ -25,20 +25,20 @@ const getParams = async () => {
 
 const connect = async () => {
 	if (typeof window.ethereum === "undefined") {
-		console.log("ウォレットが接続できていません");
+		logs("ウォレットが接続できていません");
 	} else {
 		await getParams();
 	}
 
 	const accounts = await provider.send("eth_requestAccounts", []);
 	if (accounts.length === 0) {
-		alert("ウォレットが接続できていません");
+		logs("ウォレットが接続できていません");
 		return false;
 	}
 
 	if (accounts[0] !== address.toLowerCase()) {
 		document.getElementById("address").textContent = address;
-		alert(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${address}です。`);
+		logs(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${address}です。`);
 		return false;
 	}
 
@@ -84,7 +84,7 @@ const connect = async () => {
 
 	const { chainId } = await provider.getNetwork();
 	if (chainId !== polygonChainId) {
-		alert("ウォレットでPoligonネットワークを選択してください");
+		logs("ウォレットでPoligonネットワークを選択してください");
 		return false;
 	}
 
