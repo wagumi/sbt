@@ -78,7 +78,6 @@ const connect = async () => {
 			],
 		});
 */
-	window.location.reload();
 	
 	} catch (e) {
 		console.log(e);
@@ -92,6 +91,10 @@ const connect = async () => {
 
 	return true;
 };
+
+window.ethereum.on("chainChanged", (accountNo) => {
+	window.location.reload();
+});
 
 const addressArea = document.getElementById("address");
 addressArea.addEventListener("click", async () => {
