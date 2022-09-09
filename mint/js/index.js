@@ -1,4 +1,5 @@
-const url = new URL(window.location.href);
+let url = new URL(window.location.href);
+url = decodeURI(url);
 const address = url.searchParams.get("address");
 const username = url.searchParams.get("username");
 const userid = url.searchParams.get("userid");
