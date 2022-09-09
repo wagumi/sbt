@@ -1,8 +1,8 @@
 {
-  "name": "ukishima",
+  "name": "George",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=488544515976724480",
-  "external_url": "https://wagumi-sbt.notion.site/f57e14f929504fafaaad474730102da4",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=700246962016092160",
+  "external_url": "https://wagumi-sbt.notion.site/eb0391572f5345d6aac6aa149452682c",
   "properties": {
     "toknes": [],
     "sns": {},
@@ -16,18 +16,6 @@
         "date": {
           "start": "2022-04-01",
           "end": "2022-04-30",
-          "time_zone": null
-        }
-      },
-      {
-        "id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
-        "last_edited_time": "2022-09-09T22:53:00.000Z",
-        "name": "Wagumi SBTを発行",
-        "image": "6df1bc1186205078af668045961f0a67.jpg",
-        "description": "Wagumi SBTを申請し、発行されました。",
-        "date": {
-          "start": "2022-09-09",
-          "end": null,
           "time_zone": null
         }
       }
