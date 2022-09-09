@@ -1,0 +1,24 @@
+{
+  "name": "Yuuukichi",
+  "description": "He/She is one of wagumi members.",
+  "image": "undefined915102761262125067",
+  "external_url": "undefined424b086f6a1c400db1b6101f52a3b729",
+  "properties": {
+    "toknes": [],
+    "sns": {},
+    "contributions": [
+      {
+        "id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
+        "last_edited_time": "2022-09-09T03:13:00.000Z",
+        "name": "和組東京オフ会に参加",
+        "image": "Untitled.png",
+        "description": "和組として国内単独開催初となるオフ会に参加しました。",
+        "date": {
+          "start": "2022-09-09",
+          "end": null,
+          "time_zone": null
+        }
+      }
+    ]
+  }
+}

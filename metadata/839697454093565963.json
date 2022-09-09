@@ -1,0 +1,24 @@
+{
+  "name": "Shohei Matsumoto",
+  "description": "He/She is one of wagumi members.",
+  "image": "undefined839697454093565963",
+  "external_url": "undefined9b979baecb524abcb4bf7ae8a55359b2",
+  "properties": {
+    "toknes": [],
+    "sns": {},
+    "contributions": [
+      {
+        "id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
+        "last_edited_time": "2022-09-09T03:13:00.000Z",
+        "name": "和組東京オフ会に参加",
+        "image": "Untitled.png",
+        "description": "和組として国内単独開催初となるオフ会に参加しました。",
+        "date": {
+          "start": "2022-09-09",
+          "end": null,
+          "time_zone": null
+        }
+      }
+    ]
+  }
+}
