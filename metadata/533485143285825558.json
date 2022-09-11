@@ -9,9 +9,8 @@
     "contributions": [
       {
         "id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
-        "last_edited_time": "2022-09-09T13:54:00.000Z",
         "name": "和組東京オフ会に参加",
-        "image": "FcL8476aIAAulJe.jpg",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d3c8511d-ac27-41a9-bdcd-52345afa69b2/FcL8476aIAAulJe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220911T122053Z&X-Amz-Expires=3600&X-Amz-Signature=c8e0d4b666457c9bc058efc5f2db13179f8ac56be4f5042931129ebd814a3d73&X-Amz-SignedHeaders=host&x-id=GetObject",
         "description": "和組として国内単独開催初となるオフ会に参加しました。",
         "date": {
           "start": "2022-09-09",
