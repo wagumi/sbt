@@ -9,9 +9,8 @@
     "contributions": [
       {
         "id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
-        "last_edited_time": "2022-09-09T22:53:00.000Z",
         "name": "Wagumi SBTを発行",
-        "image": "6df1bc1186205078af668045961f0a67.jpg",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/02ea6319-f65d-44d8-a45d-c82afb9ce1f2/6df1bc1186205078af668045961f0a67.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220911T122051Z&X-Amz-Expires=3600&X-Amz-Signature=aebee564ebc93d1d6496df8ba80627ad296ada8b3f762f5ae1a9099530d623d2&X-Amz-SignedHeaders=host&x-id=GetObject",
         "description": "Wagumi SBTを申請し、発行されました。",
         "date": {
           "start": "2022-09-09",
