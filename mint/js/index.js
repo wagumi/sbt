@@ -1,4 +1,10 @@
 let url = new URL(window.location.href);
+if(url.searchParams.get("m")){
+	let mobile_url = window.location.href.replace("https://","https://metamask.app.link/dapp/");
+	mobile_url = mobile_url.replace("&m=1","");
+	window.location.href = mobile_url;
+}
+
 const address = url.searchParams.get("address");
 const username = decodeURI(url.searchParams.get("username"));
 const userid = url.searchParams.get("userid");
