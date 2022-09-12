@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Alata';
-    src: url(./fonts/Alata-Regular.ttf)  format("truetype");
-    src: url(./fonts/Alata-Regular.woff) format('woff');
+    src: url(../fonts/Alata-Regular.ttf)  format("truetype");
+    src: url(../fonts/Alata-Regular.woff) format('woff');
 }
 
   * {
@@ -233,10 +233,10 @@
   }
 
   a.tx-guide__button_orange.button_blue {
-    background-color: #6430d6;
+    background-color: #ff3697;
   }
   a.tx-guide__button_orange.button_blue:hover {
-    background-color: #8f5ef9;
+    background-color: #ff5baa;
   }
 
   a.tx-guide__button_orange span.arrow {
@@ -246,13 +246,19 @@
     bottom: 25px;
     right: 24px;
   }
+  a.tx-guide__button_orange.discord span.arrow {
+    right: 54px;
+  }
+  a.tx-guide__button_orange.manual span.arrow {
+    right: 64px;
+  }
   a.tx-guide__button_orange.white_paper span.arrow {
-    right: 90px;
+    right: 64px;
   }
 
   #mintbutton_section_pc h2,
   #mintbutton_section_mobile h2 {
-    text-align: left;
+    text-align: center;
     font-size: 2.5rem !important;
     margin-bottom: 16px;
   }
@@ -317,3 +323,9 @@
   #footer .navi ul li:first-child {
     margin-left: 0;
   }
+
+#footer h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
