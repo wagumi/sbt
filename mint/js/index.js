@@ -164,7 +164,7 @@ if (isMobile == 1) {
 
 const mintButtonMobile = document.getElementById("mintButton_mobile");
 mintButtonMobile.addEventListener('click', function() {
-	alert(mobileButtonUrl);
+	//alert(mobileButtonUrl);
 	window.location.href = mobileButtonUrl;
 }, false);
 //---------------------------------------------
