@@ -1,0 +1,34 @@
+{
+  "name": "Asuku",
+  "description": "He/She is one of wagumi members.",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=418262292032126977",
+  "external_url": "https://wagumi-sbt.notion.site/1f454f52bfcc4bcab46bde6538017597",
+  "properties": {
+    "toknes": [],
+    "sns": {},
+    "contributions": [
+      {
+        "id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
+        "name": "Wagumi SBTを発行",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/02ea6319-f65d-44d8-a45d-c82afb9ce1f2/6df1bc1186205078af668045961f0a67.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220911T152628Z&X-Amz-Expires=3600&X-Amz-Signature=190c7ecb919940984130f559aba57eb36c9bf9fd4a03a2f95eab1c5a48d845f2&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "description": "Wagumi SBTを申請し、発行されました。",
+        "date": {
+          "start": "2022-09-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      {
+        "id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
+        "name": "和組東京オフ会に参加",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d3c8511d-ac27-41a9-bdcd-52345afa69b2/FcL8476aIAAulJe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220911T152630Z&X-Amz-Expires=3600&X-Amz-Signature=8975c0ba8c691814052bf4989b1e4ce24de4eccd1702b58ca74c30dd2a13cbd4&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "description": "和組として国内単独開催初となるオフ会に参加しました。",
+        "date": {
+          "start": "2022-09-09",
+          "end": null,
+          "time_zone": null
+        }
+      }
+    ]
+  }
+}
