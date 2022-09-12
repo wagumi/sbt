@@ -1,15 +1,16 @@
-let url = new URL(window.location.href);
+const url = new URL(window.location.href);
 const address = url.searchParams.get("address");
-const username = decodeURI(url.searchParams.get("username"));
+const username = url.searchParams.get("username");
 const userid = url.searchParams.get("userid");
 const salt = url.searchParams.get("salt");
 const signature = url.searchParams.get("signature");
 const debug = url.searchParams.get("debug");
 const isMobile = url.searchParams.get("m");
 
-const provider = new ethers.providers.Web3Provider(window.ethereum);
+//const provider = new ethers.providers.Web3Provider(window.ethereum);
 
-const polygonChainId = 137;
+//const chainId = 137;
+const polygonChainId = 80001;
 
 const getParams = async () => {
 	if (address && userid && salt && signature) {
@@ -25,26 +26,28 @@ const getParams = async () => {
 };
 
 const connect = async () => {
+/*
 	if (typeof window.ethereum === "undefined") {
-		logs("ウォレットが接続できていません");
+		console.log("ウォレットが接続できていません");
 	} else {
 		await getParams();
 	}
 
 	const accounts = await provider.send("eth_requestAccounts", []);
 	if (accounts.length === 0) {
-		logs("ウォレットが接続できていません");
+		alert("ウォレットが接続できていません");
 		return false;
 	}
-
+*/
 	if (accounts[0] !== address.toLowerCase()) {
 		document.getElementById("address").textContent = address;
-		logs(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${address}です。`);
+		alert(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${address}です。`);
 		return false;
 	}
 
-	try {
-		
+	//try {
+
+	/*
 		await ethereum.request({
 			method: "wallet_addEthereumChain",
 			params: [
@@ -61,8 +64,10 @@ const connect = async () => {
 				},
 			],
 		});
+*/
+
 /*
-		const result = await ethereum.request({
+	const result = await ethereum.request({
 			method: "wallet_addEthereumChain",
 			params: [
 				{
@@ -78,24 +83,20 @@ const connect = async () => {
 				},
 			],
 		});
-*/
-	
 	} catch (e) {
 		console.log(e);
 	}
 
 	const { chainId } = await provider.getNetwork();
 	if (chainId !== polygonChainId) {
-		logs("ウォレットでPoligonネットワークを選択してください");
+		alert("ウォレットでPoligonネットワークを選択してください");
 		return false;
 	}
 
-	return true;
-};
+	*/
 
-window.ethereum.on("chainChanged", (accountNo) => {
-	window.location.reload();
-});
+	//return true;
+};
 
 const addressArea = document.getElementById("address");
 addressArea.addEventListener("click", async () => {
@@ -132,8 +133,7 @@ mintButton.addEventListener("click", async () => {
 				mintButton.ariaDisabled = "mint";
 				await mint();
 			}
-		} catch (e){
-			console.log(e);
+		} catch {
 		} finally {
 			mintButton.ariaDisabled = null;
 		}
@@ -164,7 +164,7 @@ if (isMobile == 1) {
 
 const mintButtonMobile = document.getElementById("mintButton_mobile");
 mintButtonMobile.addEventListener('click', function() {
-	//alert(mobileButtonUrl);
+	alert(mobileButtonUrl);
 	window.location.href = mobileButtonUrl;
 }, false);
 //---------------------------------------------
@@ -203,26 +203,24 @@ const mint = async () => {
 	];
 
 	try {
+/*
 		const signer = provider.getSigner();
 
 		const contract = new ethers.Contract(
-			"0xef756b67b90026F91D047D1b991F87D657309A42",
+			"0xc0B3483bD8B2740b7BC070615FEb9988F793d621",
 			abi,
 			signer,
 		);
-		
+
 		logs("SBTを発行します");
 		const tx = await contract.mint(address, userid, salt, signature);
-		logs(`トランザクションを開始しました<br><a href="https://polygonscan.com/tx/${tx.hash}" target="_blank">https://polygonscan.com/tx/${tx.hash}</a><br>`);
+		logs(`トランザクションを開始しました<br><a href="https://mumbai.polygonscan.com/tx/${tx.hash}" target="_blank">https://mumbai.polygonscan.com/tx/${tx.hash}</a><br>`);
 		const tr = await tx.wait();
 		logs("SBTが発行されました");
+*/
 	} catch (e) {
-			if(e.message.indexOf("MINTED ALREADY") >= 0) {
-				logs('<font color="red">既にSBTが発行されています</font>');				
-			}
 			logs("SBT発行処理を中止しました");
 		if (debug) {
-			logs(e);
 			alert(e);
 		}
 	}
