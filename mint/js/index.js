@@ -5,6 +5,7 @@ const userid = url.searchParams.get("userid");
 const salt = url.searchParams.get("salt");
 const signature = url.searchParams.get("signature");
 const debug = url.searchParams.get("debug");
+const isMobile = url.searchParams.get("m");
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
@@ -132,6 +133,36 @@ mintButton.addEventListener("click", async () => {
 		}
 	}
 });
+
+
+//---------------------------------------------
+metamaskBaseUrl = 'https://metamask.app.link/dapp/wagumi.github.io/sbt/mint/';
+mobileButtonUrl = '';
+
+if (isMobile == 1) {
+	document.getElementById("mintbutton_section_h2_pc").style.display ="none";
+	document.getElementById("mintbutton_section_mobile").style.display ="none";
+	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
+		'&username=' + username +
+		'&userid=' + userid +
+		'&salt=' + salt +
+		'&signature=' + signature;
+
+} else {
+	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
+		'&username=' + username +
+		'&userid=' + userid +
+		'&salt=' + salt +
+		'&signature=' + signature + '&m=1';
+}
+
+const mintButtonMobile = document.getElementById("mintButton_mobile");
+mintButtonMobile.addEventListener('click', function() {
+	alert(mobileButtonUrl);
+	window.location.href = mobileButtonUrl;
+}, false);
+//---------------------------------------------
+
 
 const mint = async () => {
 	const abi = [
