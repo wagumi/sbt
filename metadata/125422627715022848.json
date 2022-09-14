@@ -21,6 +21,17 @@
         }
       },
       {
+        "id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
+        "name": "Wagumi SBTを発行",
+        "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
+        "description": "Wagumi SBTを申請し、発行されました。",
+        "date": {
+          "start": "2022-09-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      {
         "name": "IVS那覇で登壇",
         "image": "https://media.discordapp.net/attachments/981208746103537744/994869469476298823/IMG_0444.jpg?width=331&height=442",
         "description": "IVS那覇でセッションに登壇しました。",
