@@ -43,7 +43,6 @@ const connect = async () => {
 	}
 
 	try {
-		
 		await ethereum.request({
 			method: "wallet_addEthereumChain",
 			params: [
@@ -60,7 +59,7 @@ const connect = async () => {
 				},
 			],
 		});
-/*
+		/*
 		const result = await ethereum.request({
 			method: "wallet_addEthereumChain",
 			params: [
@@ -78,7 +77,7 @@ const connect = async () => {
 			],
 		});
 */
-	
+
 	} catch (e) {
 		console.log(e);
 	}
@@ -92,7 +91,8 @@ const connect = async () => {
 	return true;
 };
 
-window.ethereum.on("chainChanged", (accountNo) => {
+window.ethereum.on("chainChanged", (chainId) => {
+	console.log(`changed chainId:${chainId}`);
 	window.location.reload();
 });
 
@@ -131,7 +131,7 @@ mintButton.addEventListener("click", async () => {
 				mintButton.ariaDisabled = "mint";
 				await mint();
 			}
-		} catch (e){
+		} catch (e) {
 			console.log(e);
 		} finally {
 			mintButton.ariaDisabled = null;
@@ -179,17 +179,19 @@ const mint = async () => {
 			abi,
 			signer,
 		);
-		
+
 		logs("SBTを発行します");
 		const tx = await contract.mint(address, userid, salt, signature);
-		logs(`トランザクションを開始しました<br><a href="https://polygonscan.com/tx/${tx.hash}" target="_blank">https://polygonscan.com/tx/${tx.hash}</a><br>`);
-		const tr = await tx.wait();
+		logs(
+			`トランザクションを開始しました<br><a href="https://polygonscan.com/tx/${tx.hash}" target="_blank">https://polygonscan.com/tx/${tx.hash}</a><br>`,
+		);
+		await tx.wait();
 		logs("SBTが発行されました");
 	} catch (e) {
-			if(e.message.indexOf("MINTED ALREADY") >= 0) {
-				logs('<font color="red">既にSBTが発行されています</font>');				
-			}
-			logs("SBT発行処理を中止しました");
+		if (e.message.indexOf("MINTED ALREADY") >= 0) {
+			logs('<font color="red">既にSBTが発行されています</font>');
+		}
+		logs("SBT発行処理を中止しました");
 		if (debug) {
 			logs(e);
 			alert(e);
@@ -197,13 +199,12 @@ const mint = async () => {
 	}
 };
 
-const logs = (message) =>{
+const logs = (message) => {
 	document.getElementById("logs").insertAdjacentHTML(
 		"afterbegin",
 		`${message}<br>`,
 	);
-
-}
+};
 
 (async () => {
 	await getParams();
