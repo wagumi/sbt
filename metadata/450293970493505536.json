@@ -8,32 +8,6 @@
     "sns": {},
     "contributions": [
       {
-        "name": "Wagumi SBTを発行",
-        "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
-        "description": "Wagumi SBTを申請し、発行されました。",
-        "properties": {
-          "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
-          "reference": []
-        },
-        "date": {
-          "start": "2022-09-09",
-          "end": ""
-        }
-      },
-      {
-        "name": "和組東京オフ会に参加",
-        "image": "https://cdn.discordapp.com/attachments/994575868007555112/1019103681297268817/unknown.png",
-        "description": "和組として国内単独開催初となるオフ会に参加しました。",
-        "properties": {
-          "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
-          "reference": []
-        },
-        "date": {
-          "start": "2022-09-09",
-          "end": ""
-        }
-      },
-      {
         "id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
         "name": "Wagumi SBTを発行",
         "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
@@ -45,16 +19,25 @@
         }
       },
       {
+        "id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
+        "name": "和組東京オフ会に参加",
+        "image": "https://cdn.discordapp.com/attachments/994575868007555112/1019103681297268817/unknown.png",
+        "description": "和組として国内単独開催初となるオフ会に参加しました。",
+        "date": {
+          "start": "2022-09-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      {
+        "id": "9687b7b9-584b-4223-b873-966d4d317161",
         "name": "5000人記念イベント 開催に尽力",
         "image": "https://cdn.discordapp.com/attachments/914988919362293760/970922588064841778/unknown.png",
         "description": "がんばりました。",
-        "properties": {
-          "page_id": "9687b7b9-584b-4223-b873-966d4d317161",
-          "reference": []
-        },
         "date": {
           "start": "2022-04-01",
-          "end": "2022-04-30"
+          "end": "2022-04-30",
+          "time_zone": null
         }
       }
     ]
