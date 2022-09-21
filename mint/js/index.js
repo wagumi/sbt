@@ -1,18 +1,32 @@
-const url = new URL(window.location.href);
+let url = new URL(window.location.href);
 const address = url.searchParams.get("address");
-const username = url.searchParams.get("username");
+const username = decodeURI(url.searchParams.get("username"));
 const userid = url.searchParams.get("userid");
 const salt = url.searchParams.get("salt");
 const signature = url.searchParams.get("signature");
 const debug = url.searchParams.get("debug");
-const isMobile = url.searchParams.get("m");
+const mobileParamFlg = url.searchParams.get("m");
 
-//const provider = new ethers.providers.Web3Provider(window.ethereum);
+console.log('-----------------');
+console.log('1. isMobile(): ');
+console.log(isMobile());
+console.log('-----------------');
 
-//const chainId = 137;
-const polygonChainId = 80001;
+
+if (!isMobile()) {
+	console.log('-----------------');
+	console.log('2. isMobile(): ');
+	console.log(isMobile());
+	console.log('-----------------');
+	const provider = new ethers.providers.Web3Provider(window.ethereum);
+}
+
+
+const polygonChainId = 137;
+const metamaskBaseUrl = 'https://metamask.app.link/dapp/wagumi.github.io/sbt/mint/';
 
 const getParams = async () => {
+
 	if (address && userid && salt && signature) {
 		document.getElementById("address").textContent = address;
 		document.getElementById("username").textContent = username;
@@ -25,29 +39,33 @@ const getParams = async () => {
 	}
 };
 
-const connect = async () => {
-/*
+if (!isMobile()) {
+	console.log('-----------------');
+	console.log('3. isMobile(): ');
+	console.log(isMobile());
+	console.log('-----------------');
+
+	const connect = async () => {
 	if (typeof window.ethereum === "undefined") {
-		console.log("ウォレットが接続できていません");
+		logs("ウォレットが接続できていません");
 	} else {
 		await getParams();
 	}
 
 	const accounts = await provider.send("eth_requestAccounts", []);
 	if (accounts.length === 0) {
-		alert("ウォレットが接続できていません");
+		logs("ウォレットが接続できていません");
 		return false;
 	}
-*/
+
 	if (accounts[0] !== address.toLowerCase()) {
 		document.getElementById("address").textContent = address;
-		alert(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${address}です。`);
+		logs(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${address}です。`);
 		return false;
 	}
 
-	//try {
+	try {
 
-	/*
 		await ethereum.request({
 			method: "wallet_addEthereumChain",
 			params: [
@@ -64,10 +82,8 @@ const connect = async () => {
 				},
 			],
 		});
-*/
-
-/*
-	const result = await ethereum.request({
+		/*
+		const result = await ethereum.request({
 			method: "wallet_addEthereumChain",
 			params: [
 				{
@@ -83,20 +99,27 @@ const connect = async () => {
 				},
 			],
 		});
+*/
+
 	} catch (e) {
 		console.log(e);
 	}
 
 	const { chainId } = await provider.getNetwork();
 	if (chainId !== polygonChainId) {
-		alert("ウォレットでPoligonネットワークを選択してください");
+		logs("ウォレットでPoligonネットワークを選択してください");
 		return false;
 	}
 
-	*/
-
-	//return true;
+	return true;
 };
+
+window.ethereum.on("chainChanged", (chainId) => {
+	console.log(`changed chainId:${chainId}`);
+	window.location.reload();
+});
+
+}
 
 const addressArea = document.getElementById("address");
 addressArea.addEventListener("click", async () => {
@@ -122,6 +145,9 @@ logsArea.addEventListener("click", async () => {
 	navigator.clipboard.writeText(content);
 });
 
+//------------------------------------------
+if (!isMobile()) {
+
 const mintButton = document.getElementById("mintButton");
 mintButton.addEventListener("click", async () => {
 	if (mintButton.ariaDisabled === null) {
@@ -133,42 +159,13 @@ mintButton.addEventListener("click", async () => {
 				mintButton.ariaDisabled = "mint";
 				await mint();
 			}
-		} catch {
+		} catch (e) {
+			console.log(e);
 		} finally {
 			mintButton.ariaDisabled = null;
 		}
 	}
 });
-
-
-//---------------------------------------------
-metamaskBaseUrl = 'https://metamask.app.link/dapp/wagumi.github.io/sbt/mint/';
-mobileButtonUrl = '';
-
-if (isMobile == 1) {
-	document.getElementById("mintbutton_section_h2_pc").style.display ="none";
-	document.getElementById("mintbutton_section_mobile").style.display ="none";
-	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
-		'&username=' + username +
-		'&userid=' + userid +
-		'&salt=' + salt +
-		'&signature=' + signature;
-
-} else {
-	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
-		'&username=' + username +
-		'&userid=' + userid +
-		'&salt=' + salt +
-		'&signature=' + signature + '&m=1';
-}
-
-const mintButtonMobile = document.getElementById("mintButton_mobile");
-mintButtonMobile.addEventListener('click', function() {
-	alert(mobileButtonUrl);
-	window.location.href = mobileButtonUrl;
-}, false);
-//---------------------------------------------
-
 
 const mint = async () => {
 	const abi = [
@@ -203,37 +200,86 @@ const mint = async () => {
 	];
 
 	try {
-/*
 		const signer = provider.getSigner();
 
 		const contract = new ethers.Contract(
-			"0xc0B3483bD8B2740b7BC070615FEb9988F793d621",
+			"0xef756b67b90026F91D047D1b991F87D657309A42",
 			abi,
 			signer,
 		);
 
 		logs("SBTを発行します");
 		const tx = await contract.mint(address, userid, salt, signature);
-		logs(`トランザクションを開始しました<br><a href="https://mumbai.polygonscan.com/tx/${tx.hash}" target="_blank">https://mumbai.polygonscan.com/tx/${tx.hash}</a><br>`);
-		const tr = await tx.wait();
+		logs(
+			`トランザクションを開始しました<br><a href="https://polygonscan.com/tx/${tx.hash}" target="_blank">https://polygonscan.com/tx/${tx.hash}</a><br>`,
+		);
+		await tx.wait();
 		logs("SBTが発行されました");
-*/
 	} catch (e) {
-			logs("SBT発行処理を中止しました");
+		if (e.message.indexOf("MINTED ALREADY") >= 0) {
+			logs('<font color="red">既にSBTが発行されています</font>');
+		}
+		logs("SBT発行処理を中止しました");
 		if (debug) {
+			logs(e);
 			alert(e);
 		}
 	}
 };
 
-const logs = (message) =>{
+}
+//------------------------------------------
+
+//---------------------------------------------
+let mobileButtonUrl = '';
+
+if (mobileParamFlg === 1) {
+	document.getElementById("mintbutton_section_mobile").style.display ="none";
+	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
+		'&username=' + username +
+		'&userid=' + userid +
+		'&salt=' + salt +
+		'&signature=' + signature;
+
+} else {
+	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
+		'&username=' + username +
+		'&userid=' + userid +
+		'&salt=' + salt +
+		'&signature=' + signature + 
+		'&m=1';
+}
+
+if (isMobile() && !mobileParamFlg) {
+	document.getElementById("mintbutton_section_pc").style.display ="none";
+	document.getElementById("mintbutton_section_mobile").style.display ="block";
+} else {
+	document.getElementById("mintbutton_section_pc").style.display ="block";
+	document.getElementById("mintbutton_section_mobile").style.display ="none";
+}
+
+const mintButtonMobile = document.getElementById("mintButton_mobile");
+mintButtonMobile.addEventListener('click', function() {
+//	alert(mobileButtonUrl);
+	window.location.href = mobileButtonUrl;
+}, false);
+//---------------------------------------------
+
+const logs = (message) => {
 	document.getElementById("logs").insertAdjacentHTML(
 		"afterbegin",
 		`${message}<br>`,
 	);
-
-}
+};
 
 (async () => {
 	await getParams();
 })();
+
+function isMobile() {
+	if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+	  return true;
+	} else {
+	  return false;
+	}
+}
