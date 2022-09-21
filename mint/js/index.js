@@ -13,13 +13,14 @@ console.log(isMobile());
 console.log('-----------------');
 
 
-if (!isMobile()) {
+if (true) {
 	console.log('-----------------');
 	console.log('2. isMobile(): ');
 	console.log(isMobile());
 	console.log('-----------------');
-	const provider = new ethers.providers.Web3Provider(window.ethereum);
 }
+
+const provider = new ethers.providers.Web3Provider(window.ethereum);
 
 
 const polygonChainId = 137;
@@ -39,24 +40,31 @@ const getParams = async () => {
 	}
 };
 
-if (!isMobile()) {
-	console.log('-----------------');
-	console.log('3. isMobile(): ');
-	console.log(isMobile());
-	console.log('-----------------');
+const connect = async () => {
+	
+	if (!isMobile()) {
 
-	const connect = async () => {
+
+
 	if (typeof window.ethereum === "undefined") {
 		logs("ウォレットが接続できていません");
+
 	} else {
 		await getParams();
 	}
+
+	} else {
+		await getParams();
+	}
+
 
 	const accounts = await provider.send("eth_requestAccounts", []);
 	if (accounts.length === 0) {
 		logs("ウォレットが接続できていません");
 		return false;
 	}
+
+	if (!isMobile()) {
 
 	if (accounts[0] !== address.toLowerCase()) {
 		document.getElementById("address").textContent = address;
@@ -111,8 +119,17 @@ if (!isMobile()) {
 		return false;
 	}
 
-	return true;
+
+		return true;
+	}
+
 };
+
+if (!isMobile()) {
+		console.log('-----------------');
+		console.log('4. isMobile(): ');
+		console.log(isMobile());
+		console.log('-----------------');
 
 window.ethereum.on("chainChanged", (chainId) => {
 	console.log(`changed chainId:${chainId}`);
@@ -277,6 +294,8 @@ const logs = (message) => {
 })();
 
 function isMobile() {
+	return false;
+
 	if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
 	  return true;
 	} else {
