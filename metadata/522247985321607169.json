@@ -1,0 +1,25 @@
+{
+  "name": "toufu",
+  "description": "He/She is one of wagumi members.",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=522247985321607169",
+  "external_url": "https://wagumi-sbt.notion.site/0d91ee16b30b4ae6ae9dcd9d0d7f2f1e",
+  "properties": {
+    "toknes": [],
+    "sns": {},
+    "contributions": [
+      {
+        "name": "Wagumi SBTを発行",
+        "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
+        "description": "Wagumi SBTを申請し、発行されました。",
+        "properties": {
+          "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
+          "reference": []
+        },
+        "date": {
+          "start": "2022-09-09",
+          "end": ""
+        }
+      }
+    ]
+  }
+}
