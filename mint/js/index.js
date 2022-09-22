@@ -26,7 +26,7 @@ const getParams = async () => {
 
 const connect = async () => {
 	
-	if (!isMobile()) {
+	if (!isMobile() || mobileParamFlg) {
 
 		if (typeof window.ethereum === "undefined") {
 			logs("ウォレットが接続できていません");
@@ -99,7 +99,7 @@ const connect = async () => {
 
 };
 
-if (!isMobile()) {
+if (!isMobile() || mobileParamFlg) {
 	window.ethereum.on("chainChanged", (chainId) => {
 		alert("chainChanged");
 		console.log(`changed chainId:${chainId}`);
@@ -131,7 +131,7 @@ logsArea.addEventListener("click", async () => {
 	navigator.clipboard.writeText(content);
 });
 
-if (!isMobile()) {
+if (!isMobile() || mobileParamFlg) {
 	const mintButton = document.getElementById("mintButton");
 	mintButton.addEventListener("click", async () => {
 		if (mintButton.ariaDisabled === null) {
@@ -244,10 +244,10 @@ const logs = (message) => {
 })();
 
 function getEthersProvider() {
-	if (isMobile()) {
-		return null;
-	} else {
+	if (!isMobile() || mobileParamFlg) {
 		return new ethers.providers.Web3Provider(window.ethereum);
+	} else {
+		return null;
 	}
 }
 
