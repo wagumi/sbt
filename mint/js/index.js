@@ -6,31 +6,12 @@ const salt = url.searchParams.get("salt");
 const signature = url.searchParams.get("signature");
 const debug = url.searchParams.get("debug");
 const mobileParamFlg = url.searchParams.get("m");
-
-console.log('-----------------');
-console.log('1. isMobile(): ');
-console.log(isMobile());
-console.log('-----------------');
-
-let provider = setEthersProvider();
-
-/*
-if (!isMobile()) {
-	console.log('-----------------');
-	console.log('2. isMobile(): ');
-	console.log(isMobile());
-	console.log('-----------------');
-	//provider = new ethers.providers.Web3Provider(window.ethereum);
-} else {
-
-}
-*/
+const provider = getEthersProvider();
 
 const polygonChainId = 137;
 const metamaskBaseUrl = 'https://metamask.app.link/dapp/wagumi.github.io/sbt/mint/';
 
 const getParams = async () => {
-
 	if (address && userid && salt && signature) {
 		document.getElementById("address").textContent = address;
 		document.getElementById("username").textContent = username;
@@ -46,105 +27,84 @@ const getParams = async () => {
 const connect = async () => {
 	
 	if (!isMobile()) {
-		console.log('-----------------');
-		console.log('3. isMobile(): ');
-		console.log(isMobile());
-		console.log('-----------------');
-	
 
+		if (typeof window.ethereum === "undefined") {
+			logs("ウォレットが接続できていません");
 
-	if (typeof window.ethereum === "undefined") {
-		logs("ウォレットが接続できていません");
+		} else {
+			await getParams();
+		}
 
-	} else {
-		await getParams();
-	}
+		const accounts = await provider.send("eth_requestAccounts", []);
+		if (accounts.length === 0) {
+			logs("ウォレットが接続できていません");
+			return false;
+		}
 
-	//} else {
-	//	await getParams();
-	//}
+		if (accounts[0] !== address.toLowerCase()) {
+			document.getElementById("address").textContent = address;
+			logs(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${address}です。`);
+			return false;
+		}
 
-	//if (!isMobile()) {
+		try {
 
-	const accounts = await provider.send("eth_requestAccounts", []);
-	if (accounts.length === 0) {
-		logs("ウォレットが接続できていません");
-		return false;
-	}
-
-
-
-	if (accounts[0] !== address.toLowerCase()) {
-		document.getElementById("address").textContent = address;
-		logs(`ウォレットで選択されているアカウントが申請と異なります。\n申請されたアドレスは${address}です。`);
-		return false;
-	}
-
-	try {
-
-		await ethereum.request({
-			method: "wallet_addEthereumChain",
-			params: [
-				{
-					chainId: `0x${(137).toString(16)}`,
-					chainName: "Polygon Mainnet",
-					nativeCurrency: {
-						name: "MATIC",
-						symbol: "MATIC",
-						decimals: 18,
+			await ethereum.request({
+				method: "wallet_addEthereumChain",
+				params: [
+					{
+						chainId: `0x${(137).toString(16)}`,
+						chainName: "Polygon Mainnet",
+						nativeCurrency: {
+							name: "MATIC",
+							symbol: "MATIC",
+							decimals: 18,
+						},
+						rpcUrls: ["https://polygon-rpc.com"],
+						blockExplorerUrls: ["https://polygonscan.com/"],
 					},
-					rpcUrls: ["https://polygon-rpc.com"],
-					blockExplorerUrls: ["https://polygonscan.com/"],
-				},
-			],
-		});
-		/*
-		const result = await ethereum.request({
-			method: "wallet_addEthereumChain",
-			params: [
-				{
-					chainId: `0x${polygonChainId.toString(16)}`,
-					chainName: "Mumbai",
-					nativeCurrency: {
-						name: "MATIC",
-						symbol: "MATIC",
-						decimals: 18,
+				],
+			});
+
+			/*
+			const result = await ethereum.request({
+				method: "wallet_addEthereumChain",
+				params: [
+					{
+						chainId: `0x${polygonChainId.toString(16)}`,
+						chainName: "Mumbai",
+						nativeCurrency: {
+							name: "MATIC",
+							symbol: "MATIC",
+							decimals: 18,
+						},
+						rpcUrls: ["https://matic-mumbai.chainstacklabs.com"],
+						blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
 					},
-					rpcUrls: ["https://matic-mumbai.chainstacklabs.com"],
-					blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
-				},
-			],
-		});
-*/
+				],
+			});
+			*/
 
-	} catch (e) {
-		console.log(e);
-	}
+		} catch (e) {
+			console.log(e);
+		}
 
-	const { chainId } = await provider.getNetwork();
-	if (chainId !== polygonChainId) {
-		logs("ウォレットでPoligonネットワークを選択してください");
-		return false;
-	}
-
-
+		const { chainId } = await provider.getNetwork();
+		if (chainId !== polygonChainId) {
+			logs("ウォレットでPoligonネットワークを選択してください");
+			return false;
+		}
 		return true;
 	}
 
 };
 
 if (!isMobile()) {
-	console.log('-----------------');
-	console.log('4. isMobile(): ');
-	console.log(isMobile());
-	console.log('-----------------');
-
-window.ethereum.on("chainChanged", (chainId) => {
-	alert("chainChanged");
-	console.log(`changed chainId:${chainId}`);
-	window.location.reload();
-});
-
+	window.ethereum.on("chainChanged", (chainId) => {
+		alert("chainChanged");
+		console.log(`changed chainId:${chainId}`);
+		window.location.reload();
+	});
 }
 
 const addressArea = document.getElementById("address");
@@ -171,96 +131,87 @@ logsArea.addEventListener("click", async () => {
 	navigator.clipboard.writeText(content);
 });
 
-//------------------------------------------
 if (!isMobile()) {
-		console.log('-----------------');
-		console.log('4.5. isMobile(): ');
-		console.log(isMobile());
-		console.log('-----------------');
-
-const mintButton = document.getElementById("mintButton");
-mintButton.addEventListener("click", async () => {
-	if (mintButton.ariaDisabled === null) {
-		try {
-			mintButton.ariaDisabled = "connect";
-			const result = await connect();
-			console.log(result);
-			if (result) {
-				mintButton.ariaDisabled = "mint";
-				await mint();
+	const mintButton = document.getElementById("mintButton");
+	mintButton.addEventListener("click", async () => {
+		if (mintButton.ariaDisabled === null) {
+			try {
+				mintButton.ariaDisabled = "connect";
+				const result = await connect();
+				console.log(result);
+				if (result) {
+					mintButton.ariaDisabled = "mint";
+					await mint();
+				}
+			} catch (e) {
+				console.log(e);
+			} finally {
+				mintButton.ariaDisabled = null;
 			}
+		}
+	});
+
+	const mint = async () => {
+		const abi = [
+			{
+				inputs: [
+					{
+						internalType: "address",
+						name: "_address",
+						type: "address",
+					},
+					{
+						internalType: "uint256",
+						name: "_tokenId",
+						type: "uint256",
+					},
+					{
+						internalType: "uint256",
+						name: "_salt",
+						type: "uint256",
+					},
+					{
+						internalType: "bytes",
+						name: "_signature",
+						type: "bytes",
+					},
+				],
+				name: "mint",
+				outputs: [],
+				stateMutability: "nonpayable",
+				type: "function",
+			},
+		];
+
+		try {
+			const signer = provider.getSigner();
+
+			const contract = new ethers.Contract(
+				"0xef756b67b90026F91D047D1b991F87D657309A42",
+				abi,
+				signer,
+			);
+
+			logs("SBTを発行します");
+			const tx = await contract.mint(address, userid, salt, signature);
+			logs(
+				`トランザクションを開始しました<br><a href="https://polygonscan.com/tx/${tx.hash}" target="_blank">https://polygonscan.com/tx/${tx.hash}</a><br>`,
+			);
+			await tx.wait();
+			logs("SBTが発行されました");
 		} catch (e) {
-			console.log(e);
-		} finally {
-			mintButton.ariaDisabled = null;
+			if (e.message.indexOf("MINTED ALREADY") >= 0) {
+				logs('<font color="red">既にSBTが発行されています</font>');
+			}
+			logs("SBT発行処理を中止しました");
+			if (debug) {
+				logs(e);
+				alert(e);
+			}
 		}
-	}
-});
-
-const mint = async () => {
-	const abi = [
-		{
-			inputs: [
-				{
-					internalType: "address",
-					name: "_address",
-					type: "address",
-				},
-				{
-					internalType: "uint256",
-					name: "_tokenId",
-					type: "uint256",
-				},
-				{
-					internalType: "uint256",
-					name: "_salt",
-					type: "uint256",
-				},
-				{
-					internalType: "bytes",
-					name: "_signature",
-					type: "bytes",
-				},
-			],
-			name: "mint",
-			outputs: [],
-			stateMutability: "nonpayable",
-			type: "function",
-		},
-	];
-
-	try {
-		const signer = provider.getSigner();
-
-		const contract = new ethers.Contract(
-			"0xef756b67b90026F91D047D1b991F87D657309A42",
-			abi,
-			signer,
-		);
-
-		logs("SBTを発行します");
-		const tx = await contract.mint(address, userid, salt, signature);
-		logs(
-			`トランザクションを開始しました<br><a href="https://polygonscan.com/tx/${tx.hash}" target="_blank">https://polygonscan.com/tx/${tx.hash}</a><br>`,
-		);
-		await tx.wait();
-		logs("SBTが発行されました");
-	} catch (e) {
-		if (e.message.indexOf("MINTED ALREADY") >= 0) {
-			logs('<font color="red">既にSBTが発行されています</font>');
-		}
-		logs("SBT発行処理を中止しました");
-		if (debug) {
-			logs(e);
-			alert(e);
-		}
-	}
-};
-
+	};
 }
-//------------------------------------------
 
-//---------------------------------------------
 let mobileButtonUrl = '';
 
 if (mobileParamFlg !== 1) {
@@ -271,24 +222,6 @@ if (mobileParamFlg !== 1) {
 		'&signature=' + signature + 
 		'&m=1';
 }
-
-/*
-	document.getElementById("mintbutton_section_mobile").style.display ="none";
-	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
-		'&username=' + username +
-		'&userid=' + userid +
-		'&salt=' + salt +
-		'&signature=' + signature;
-
-} else {
-	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
-		'&username=' + username +
-		'&userid=' + userid +
-		'&salt=' + salt +
-		'&signature=' + signature + 
-		'&m=1';
-}
-*/
 
 if (isMobile() && !mobileParamFlg) {
 	document.getElementById("mintbutton_section_pc").style.display ="none";
@@ -303,7 +236,6 @@ mintButtonMobile.addEventListener('click', function() {
 	//alert(mobileButtonUrl);
 	window.location.href = mobileButtonUrl;
 }, false);
-//---------------------------------------------
 
 const logs = (message) => {
 	document.getElementById("logs").insertAdjacentHTML(
@@ -316,12 +248,7 @@ const logs = (message) => {
 	await getParams();
 })();
 
-function setEthersProvider() {
-	console.log('-----------------');
-	console.log('2. isMobile(): ');
-	console.log(isMobile());
-	console.log('-----------------');
-
+function getEthersProvider() {
 	if (isMobile()) {
 		return null;
 	} else {
