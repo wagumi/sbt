@@ -12,16 +12,19 @@ console.log('1. isMobile(): ');
 console.log(isMobile());
 console.log('-----------------');
 
+let provider = setEthersProvider();
 
-if (true) {
+/*
+if (!isMobile()) {
 	console.log('-----------------');
 	console.log('2. isMobile(): ');
 	console.log(isMobile());
 	console.log('-----------------');
+	//provider = new ethers.providers.Web3Provider(window.ethereum);
+} else {
+
 }
-
-const provider = new ethers.providers.Web3Provider(window.ethereum);
-
+*/
 
 const polygonChainId = 137;
 const metamaskBaseUrl = 'https://metamask.app.link/dapp/wagumi.github.io/sbt/mint/';
@@ -43,7 +46,11 @@ const getParams = async () => {
 const connect = async () => {
 	
 	if (!isMobile()) {
-
+		console.log('-----------------');
+		console.log('3. isMobile(): ');
+		console.log(isMobile());
+		console.log('-----------------');
+	
 
 
 	if (typeof window.ethereum === "undefined") {
@@ -53,10 +60,11 @@ const connect = async () => {
 		await getParams();
 	}
 
-	} else {
-		await getParams();
-	}
+	//} else {
+	//	await getParams();
+	//}
 
+	//if (!isMobile()) {
 
 	const accounts = await provider.send("eth_requestAccounts", []);
 	if (accounts.length === 0) {
@@ -64,7 +72,7 @@ const connect = async () => {
 		return false;
 	}
 
-	if (!isMobile()) {
+
 
 	if (accounts[0] !== address.toLowerCase()) {
 		document.getElementById("address").textContent = address;
@@ -126,12 +134,13 @@ const connect = async () => {
 };
 
 if (!isMobile()) {
-		console.log('-----------------');
-		console.log('4. isMobile(): ');
-		console.log(isMobile());
-		console.log('-----------------');
+	console.log('-----------------');
+	console.log('4. isMobile(): ');
+	console.log(isMobile());
+	console.log('-----------------');
 
 window.ethereum.on("chainChanged", (chainId) => {
+	alert("chainChanged");
 	console.log(`changed chainId:${chainId}`);
 	window.location.reload();
 });
@@ -164,6 +173,10 @@ logsArea.addEventListener("click", async () => {
 
 //------------------------------------------
 if (!isMobile()) {
+		console.log('-----------------');
+		console.log('4.5. isMobile(): ');
+		console.log(isMobile());
+		console.log('-----------------');
 
 const mintButton = document.getElementById("mintButton");
 mintButton.addEventListener("click", async () => {
@@ -250,7 +263,16 @@ const mint = async () => {
 //---------------------------------------------
 let mobileButtonUrl = '';
 
-if (mobileParamFlg === 1) {
+if (mobileParamFlg !== 1) {
+	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
+		'&username=' + username +
+		'&userid=' + userid +
+		'&salt=' + salt +
+		'&signature=' + signature + 
+		'&m=1';
+}
+
+/*
 	document.getElementById("mintbutton_section_mobile").style.display ="none";
 	mobileButtonUrl = metamaskBaseUrl + '?address=' + address +
 		'&username=' + username +
@@ -266,6 +288,7 @@ if (mobileParamFlg === 1) {
 		'&signature=' + signature + 
 		'&m=1';
 }
+*/
 
 if (isMobile() && !mobileParamFlg) {
 	document.getElementById("mintbutton_section_pc").style.display ="none";
@@ -277,7 +300,7 @@ if (isMobile() && !mobileParamFlg) {
 
 const mintButtonMobile = document.getElementById("mintButton_mobile");
 mintButtonMobile.addEventListener('click', function() {
-//	alert(mobileButtonUrl);
+	//alert(mobileButtonUrl);
 	window.location.href = mobileButtonUrl;
 }, false);
 //---------------------------------------------
@@ -293,10 +316,21 @@ const logs = (message) => {
 	await getParams();
 })();
 
-function isMobile() {
-	return false;
+function setEthersProvider() {
+	console.log('-----------------');
+	console.log('2. isMobile(): ');
+	console.log(isMobile());
+	console.log('-----------------');
 
-	if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+	if (isMobile()) {
+		return null;
+	} else {
+		return new ethers.providers.Web3Provider(window.ethereum);
+	}
+}
+
+function isMobile() {
+	if (navigator.userAgent.match(/iPhone|iPad|Android.+Mobile/)) {
 	  return true;
 	} else {
 	  return false;
