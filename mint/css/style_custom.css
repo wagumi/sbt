@@ -252,6 +252,9 @@
   a.tx-guide__button_orange.manual span.arrow {
     right: 64px;
   }
+  a.tx-guide__button_orange.manual span.arrow.mint {
+    right: 20px;
+  }
   a.tx-guide__button_orange.white_paper span.arrow {
     right: 64px;
   }
@@ -266,6 +269,16 @@
   #mintbutton_section_pc h2,
   #mintbutton_section_mobile {
     display: block;
+  }
+
+  #mintButton_mobile {
+    max-width: 300px;
+  }
+  #mintbutton_section_mobile .note {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #f85733;
   }
 
   @media screen and (min-width:480px) { 
