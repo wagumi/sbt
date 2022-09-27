@@ -8,19 +8,6 @@
     "sns": {},
     "contributions": [
       {
-        "name": "これはテストレピテーションです。",
-        "image": "https://teket.jp/data/t/flyer/105/flyer.webp?t=1586871012",
-        "description": "テストです",
-        "properties": {
-          "page_id": "c9585c19-6d5d-4dca-8ea7-89043b0dc31c",
-          "reference": []
-        },
-        "date": {
-          "start": "2022-09-27",
-          "end": ""
-        }
-      },
-      {
         "name": "Wagumi SBTを発行",
         "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
         "description": "Wagumi SBTを申請し、発行されました。",
