@@ -1,0 +1,25 @@
+{
+  "name": "Saygo",
+  "description": "He/She is one of wagumi members.",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=382191570004475905",
+  "external_url": "https://wagumi-sbt.notion.site/004aa4cf66de4c2a9ecb748fcce37298",
+  "properties": {
+    "toknes": [],
+    "sns": {},
+    "contributions": [
+      {
+        "name": "Wagumi SBTを発行",
+        "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
+        "description": "WagumiSBTを申請し、発行されました。",
+        "properties": {
+          "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
+          "reference": []
+        },
+        "date": {
+          "start": "2022-09-30",
+          "end": ""
+        }
+      }
+    ]
+  }
+}
