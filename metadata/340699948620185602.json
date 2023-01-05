@@ -8,7 +8,33 @@
     "sns": {},
     "contributions": [
       {
-        "name": "WagumiDAO Adminとして活動",
+        "name": "Adminとして積極的に活動",
+        "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
+        "description": "Adminとして活動しました。",
+        "properties": {
+          "page_id": "d6c1d24e-1e46-4a73-9988-7bb5bb51511f",
+          "reference": []
+        },
+        "date": {
+          "start": "2023-01-01",
+          "end": "2023-03-31"
+        }
+      },
+      {
+        "name": "和組リーダーとして積極的に活動",
+        "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
+        "description": "WagumiDAOのリーダーを務めました。",
+        "properties": {
+          "page_id": "f55fbc6e-c035-4a5f-9384-51c4d50aaa4a",
+          "reference": []
+        },
+        "date": {
+          "start": "2023-01-01",
+          "end": "2023-06-30"
+        }
+      },
+      {
+        "name": "WagumiDAO Adminとして積極的に活動",
         "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
         "description": "Adminとして活動しました。",
         "properties": {
@@ -47,7 +73,7 @@
         }
       },
       {
-        "name": "WagumiDAO リーダーとして活動",
+        "name": "WagumiDAO リーダーとして積極的に活動",
         "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
         "description": "WagumiDAOのリーダーを務めました。",
         "properties": {
