@@ -1,0 +1,25 @@
+{
+  "name": "𝗍𝗈𝗅𝗎𝗏𝗀𝗋𝖺𝗍𝗂𝗇",
+  "description": "He/She is one of wagumi members.",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=875584543455846400",
+  "external_url": "https://wagumi-sbt.notion.site/7d013c5774114cb593eb59ad7b1aea8a",
+  "properties": {
+    "toknes": [],
+    "sns": {},
+    "contributions": [
+      {
+        "name": "Wagumi SBTを発行",
+        "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
+        "description": "WagumiSBTを申請し、発行されました。",
+        "properties": {
+          "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
+          "reference": []
+        },
+        "date": {
+          "start": "2022-09-30",
+          "end": ""
+        }
+      }
+    ]
+  }
+}
