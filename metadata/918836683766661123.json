@@ -22,7 +22,7 @@
       },
       {
         "name": "IVS那覇に参加",
-        "image": "https://www.ivs.events/wp-content/uploads/2022/05/ivs-mv-2-1536x864.jpg",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4add1bd8-fa04-47de-90d5-edafa26f3ea1/d59319-61-1d73ef6cce36dc04d843-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230314%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230314T060559Z&X-Amz-Expires=3600&X-Amz-Signature=b3a2123e36d47dfc4836808fdbef6e2e3b241bf20d2ea81686aa3e520a0b53a2&X-Amz-SignedHeaders=host&x-id=GetObject",
         "description": "IVS那覇に参加しました。",
         "properties": {
           "page_id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
