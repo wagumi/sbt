@@ -1,7 +1,7 @@
 {
   "name": "sazanami",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=905603213917585450",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=905603213917585450",
   "external_url": "https://wagumi-sbt.notion.site/f1840607bd9546fbb1486a3e25e4e027",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-30",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

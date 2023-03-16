@@ -1,7 +1,7 @@
 {
   "name": "Thomas(SnowX)",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=722678732766314499",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=722678732766314499",
   "external_url": "https://wagumi-sbt.notion.site/4c91f1349ab64994a1e11ceddc64a9d7",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "772bccfb-9c9c-4b51-8c09-eaa8e0657f95",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-04-01",
           "end": "2022-06-30"
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

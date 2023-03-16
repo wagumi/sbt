@@ -1,7 +1,7 @@
 {
   "name": "moricho",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=411983245706526732",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=411983245706526732",
   "external_url": "https://wagumi-sbt.notion.site/b621b301e9694e908da61901a21c5aea",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
           "reference": []
         },
+        "weighting": 2,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 2
+    }
+  ]
 }

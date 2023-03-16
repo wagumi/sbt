@@ -1,7 +1,7 @@
 {
   "name": "KAITADAO K・K",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=870927885903462471",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=870927885903462471",
   "external_url": "https://wagumi-sbt.notion.site/f4fcf5c789ec4126bec544c02362ce1e",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

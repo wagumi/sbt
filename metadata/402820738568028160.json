@@ -1,38 +1,12 @@
 {
   "name": "jasagiri",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=402820738568028160",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=402820738568028160",
   "external_url": "https://wagumi-sbt.notion.site/25f8fdf55d7d4f6fac4ded72047a32d8",
   "properties": {
     "toknes": [],
     "sns": {},
     "contributions": [
-      {
-        "name": "和組東京オフ会に参加",
-        "image": "https://cdn.discordapp.com/attachments/994575868007555112/1019103681297268817/unknown.png",
-        "description": "和組として国内単独開催初となるオフ会に参加しました。",
-        "properties": {
-          "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
-          "reference": []
-        },
-        "date": {
-          "start": "2022-09-09",
-          "end": ""
-        }
-      },
-      {
-        "name": "IVS那覇に参加",
-        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4add1bd8-fa04-47de-90d5-edafa26f3ea1/d59319-61-1d73ef6cce36dc04d843-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230314%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230314T060559Z&X-Amz-Expires=3600&X-Amz-Signature=b3a2123e36d47dfc4836808fdbef6e2e3b241bf20d2ea81686aa3e520a0b53a2&X-Amz-SignedHeaders=host&x-id=GetObject",
-        "description": "IVS那覇に参加しました。",
-        "properties": {
-          "page_id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
-          "reference": []
-        },
-        "date": {
-          "start": "2022-07-06",
-          "end": "2022-07-08"
-        }
-      },
       {
         "name": "Wagumi SBTを発行",
         "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
@@ -41,11 +15,48 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
+      },
+      {
+        "name": "和組東京オフ会に参加",
+        "image": "https://cdn.discordapp.com/attachments/994575868007555112/1019103681297268817/unknown.png",
+        "description": "和組として国内単独開催初となるオフ会に参加しました。",
+        "properties": {
+          "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
+          "reference": []
+        },
+        "weighting": 2,
+        "date": {
+          "start": "2022-09-09",
+          "end": ""
+        }
+      },
+      {
+        "name": "IVS那覇に参加",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4add1bd8-fa04-47de-90d5-edafa26f3ea1/d59319-61-1d73ef6cce36dc04d843-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230316T070336Z&X-Amz-Expires=3600&X-Amz-Signature=2e201a8b46b17765620cbc379b21451276a86fbcaf351538b0b521af3e5c8e4f&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "description": "IVS那覇に参加しました。",
+        "properties": {
+          "page_id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
+          "reference": []
+        },
+        "weighting": 1,
+        "date": {
+          "start": "2022-07-06",
+          "end": "2022-07-08"
+        }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 6
+    }
+  ]
 }

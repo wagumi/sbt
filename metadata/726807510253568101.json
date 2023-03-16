@@ -1,7 +1,7 @@
 {
   "name": "KIMONO",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=726807510253568101",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=726807510253568101",
   "external_url": "https://wagumi-sbt.notion.site/3357afa209144328b7cc6c82001aaa45",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-30",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

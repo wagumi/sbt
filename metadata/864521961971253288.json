@@ -1,7 +1,7 @@
 {
-  "name": "tsubasa0919s",
+  "name": "t0919s",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=864521961971253288",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=864521961971253288",
   "external_url": "https://wagumi-sbt.notion.site/85b7f4af5dbf4b208523b755f05c0e3f",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

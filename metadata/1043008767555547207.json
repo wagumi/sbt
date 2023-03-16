@@ -1,7 +1,7 @@
 {
   "name": "shinchan",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=1043008767555547207",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=1043008767555547207",
   "external_url": "https://wagumi-sbt.notion.site/36b9b8a582ca4d0186cde6d5b75928dc",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-30",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

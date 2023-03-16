@@ -1,7 +1,7 @@
 {
   "name": "Leo.hi",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=831297875979010128",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=831297875979010128",
   "external_url": "https://wagumi-sbt.notion.site/4ccc57ad51354e53855008a33b67f974",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
           "reference": []
         },
+        "weighting": 2,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 2
+    }
+  ]
 }

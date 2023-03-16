@@ -1,7 +1,7 @@
 {
   "name": "daikichi",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=695157095846379562",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=695157095846379562",
   "external_url": "https://wagumi-sbt.notion.site/c9ca60c704094058bd73a92e2a79544f",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "9687b7b9-584b-4223-b873-966d4d317161",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-04-01",
           "end": "2022-04-30"
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

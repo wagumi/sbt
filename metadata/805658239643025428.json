@@ -1,7 +1,7 @@
 {
   "name": "CHEL",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=805658239643025428",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=805658239643025428",
   "external_url": "https://wagumi-sbt.notion.site/6df6415a4a3442548e42c6fa38b7c8a8",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
           "reference": []
         },
+        "weighting": 2,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 2
+    }
+  ]
 }

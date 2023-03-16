@@ -1,7 +1,7 @@
 {
   "name": "rinte",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=972162306328903761",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=972162306328903761",
   "external_url": "https://wagumi-sbt.notion.site/b24e3366781c4abda7b2326e03fdb520",
   "properties": {
     "toknes": [],
@@ -15,6 +15,7 @@
           "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-30",
           "end": ""
@@ -28,11 +29,20 @@
           "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
           "reference": []
         },
+        "weighting": 2,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 5
+    }
+  ]
 }
