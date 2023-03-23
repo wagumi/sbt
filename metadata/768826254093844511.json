@@ -1,7 +1,7 @@
 {
   "name": "Kuni",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=768826254093844511",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=768826254093844511",
   "external_url": "https://wagumi-sbt.notion.site/e69275c6e0d242e6907cccf1bbc72b6a",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-30",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

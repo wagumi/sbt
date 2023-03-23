@@ -1,7 +1,7 @@
 {
   "name": "Arts",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=952031831123976202",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=952031831123976202",
   "external_url": "https://wagumi-sbt.notion.site/acca2034127d4e40b6d1136753508a58",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

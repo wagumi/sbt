@@ -1,7 +1,7 @@
 {
   "name": "ゆうき",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=799635732665860097",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=799635732665860097",
   "external_url": "https://wagumi-sbt.notion.site/63c05a3efc9f41d28eaaed979ff541cd",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

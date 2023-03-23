@@ -1,7 +1,7 @@
 {
   "name": "tomochapin",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=1000785293852545094",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=1000785293852545094",
   "external_url": "https://wagumi-sbt.notion.site/8b6142ef5a4e49329766a2daa3b3d3d6",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

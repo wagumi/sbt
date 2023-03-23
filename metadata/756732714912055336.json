@@ -1,7 +1,7 @@
 {
   "name": "yasek",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=756732714912055336",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=756732714912055336",
   "external_url": "https://wagumi-sbt.notion.site/2f6d784e17f64299acc8c317fdfd9e03",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

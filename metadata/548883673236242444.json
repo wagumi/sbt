@@ -1,7 +1,7 @@
 {
   "name": "Kuro",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=548883673236242444",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=548883673236242444",
   "external_url": "https://wagumi-sbt.notion.site/3a99d3ddaa0e4708b66dc77e56104974",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

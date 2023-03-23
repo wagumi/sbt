@@ -1,7 +1,7 @@
 {
   "name": "qrecia",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=1017766850182000700",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=1017766850182000700",
   "external_url": "https://wagumi-sbt.notion.site/44719697b1bd4584bf04764e46ac4c6b",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-30",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

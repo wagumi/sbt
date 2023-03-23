@@ -1,7 +1,7 @@
 {
   "name": "486",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=884947472638685194",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=884947472638685194",
   "external_url": "https://wagumi-sbt.notion.site/5d8d30299a624394a3213f96f57f3324",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

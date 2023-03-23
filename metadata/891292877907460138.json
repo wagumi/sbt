@@ -1,7 +1,7 @@
 {
   "name": "代替性きりん",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=891292877907460138",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=891292877907460138",
   "external_url": "https://wagumi-sbt.notion.site/045b7748d1c244329da9906f9a594747",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

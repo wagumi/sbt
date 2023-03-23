@@ -1,7 +1,7 @@
 {
   "name": "Saygo",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=382191570004475905",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=382191570004475905",
   "external_url": "https://wagumi-sbt.notion.site/004aa4cf66de4c2a9ecb748fcce37298",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-30",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

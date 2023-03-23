@@ -1,7 +1,7 @@
 {
   "name": "FLOPS",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=920631003788230657",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=920631003788230657",
   "external_url": "https://wagumi-sbt.notion.site/0f07e9c09500440ebe12f32368c69f6c",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

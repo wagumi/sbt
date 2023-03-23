@@ -1,7 +1,7 @@
 {
   "name": "araimono.KaiWai",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=686023579631878145",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=686023579631878145",
   "external_url": "https://wagumi-sbt.notion.site/97f37d3abecd47f5bc3ceef41c2462dd",
   "properties": {
     "toknes": [],
@@ -15,6 +15,7 @@
           "page_id": "d6c1d24e-1e46-4a73-9988-7bb5bb51511f",
           "reference": []
         },
+        "weighting": 4,
         "date": {
           "start": "2023-01-01",
           "end": "2023-03-31"
@@ -28,22 +29,10 @@
           "page_id": "5f0761e7-2094-4105-9f5d-4307a79c2fa6",
           "reference": []
         },
+        "weighting": 4,
         "date": {
           "start": "2022-10-01",
           "end": "2022-12-31"
-        }
-      },
-      {
-        "name": "和組東京オフ会に参加",
-        "image": "https://cdn.discordapp.com/attachments/994575868007555112/1019103681297268817/unknown.png",
-        "description": "和組として国内単独開催初となるオフ会に参加しました。",
-        "properties": {
-          "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
-          "reference": []
-        },
-        "date": {
-          "start": "2022-09-09",
-          "end": ""
         }
       },
       {
@@ -54,6 +43,21 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
+        "date": {
+          "start": "2022-09-09",
+          "end": ""
+        }
+      },
+      {
+        "name": "和組東京オフ会に参加",
+        "image": "https://cdn.discordapp.com/attachments/994575868007555112/1019103681297268817/unknown.png",
+        "description": "和組として国内単独開催初となるオフ会に参加しました。",
+        "properties": {
+          "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
+          "reference": []
+        },
+        "weighting": 2,
         "date": {
           "start": "2022-09-09",
           "end": ""
@@ -67,6 +71,7 @@
           "page_id": "03735aea-889f-4b04-9417-04efca3ce8a6",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-07-08",
           "end": ""
@@ -74,12 +79,13 @@
       },
       {
         "name": "IVS那覇に参加",
-        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4add1bd8-fa04-47de-90d5-edafa26f3ea1/d59319-61-1d73ef6cce36dc04d843-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230314%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230314T060559Z&X-Amz-Expires=3600&X-Amz-Signature=b3a2123e36d47dfc4836808fdbef6e2e3b241bf20d2ea81686aa3e520a0b53a2&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4add1bd8-fa04-47de-90d5-edafa26f3ea1/d59319-61-1d73ef6cce36dc04d843-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230316T070336Z&X-Amz-Expires=3600&X-Amz-Signature=2e201a8b46b17765620cbc379b21451276a86fbcaf351538b0b521af3e5c8e4f&X-Amz-SignedHeaders=host&x-id=GetObject",
         "description": "IVS那覇に参加しました。",
         "properties": {
           "page_id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
           "reference": []
         },
+        "weighting": 1,
         "date": {
           "start": "2022-07-06",
           "end": "2022-07-08"
@@ -93,22 +99,10 @@
           "page_id": "b83bbea0-5c7d-4932-b3e7-870ccf29213e",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-07-01",
           "end": "2022-09-30"
-        }
-      },
-      {
-        "name": "5000人記念イベント 開催に尽力",
-        "image": "https://cdn.discordapp.com/attachments/914988919362293760/970922588064841778/unknown.png",
-        "description": "がんばりました。",
-        "properties": {
-          "page_id": "9687b7b9-584b-4223-b873-966d4d317161",
-          "reference": []
-        },
-        "date": {
-          "start": "2022-04-01",
-          "end": "2022-04-30"
         }
       },
       {
@@ -119,11 +113,34 @@
           "page_id": "772bccfb-9c9c-4b51-8c09-eaa8e0657f95",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-04-01",
           "end": "2022-06-30"
         }
+      },
+      {
+        "name": "5000人記念イベント 開催に尽力",
+        "image": "https://cdn.discordapp.com/attachments/914988919362293760/970922588064841778/unknown.png",
+        "description": "がんばりました。",
+        "properties": {
+          "page_id": "9687b7b9-584b-4223-b873-966d4d317161",
+          "reference": []
+        },
+        "weighting": 3,
+        "date": {
+          "start": "2022-04-01",
+          "end": "2022-04-30"
+        }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 26
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "whiz",
   "description": "He/She is one of wagumi members.",
-  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=1047128688233295933",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=1047128688233295933",
   "external_url": "https://wagumi-sbt.notion.site/36a33dc4298a4e14b7491bb9be1dccdd",
   "properties": {
     "toknes": [],
@@ -15,11 +15,20 @@
           "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-30",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attribute": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }
