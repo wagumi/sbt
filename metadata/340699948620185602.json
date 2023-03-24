@@ -8,6 +8,48 @@
     "sns": {},
     "contributions": [
       {
+        "name": "和組リーダーとして積極的に活動",
+        "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
+        "description": "WagumiDAOのリーダーを務めました。",
+        "properties": {
+          "page_id": "f55fbc6e-c035-4a5f-9384-51c4d50aaa4a",
+          "reference": []
+        },
+        "weighting": 4,
+        "date": {
+          "start": "2023-01-01",
+          "end": "2023-06-30"
+        }
+      },
+      {
+        "name": "Adminとして積極的に活動",
+        "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
+        "description": "Adminとして活動しました。",
+        "properties": {
+          "page_id": "d6c1d24e-1e46-4a73-9988-7bb5bb51511f",
+          "reference": []
+        },
+        "weighting": 4,
+        "date": {
+          "start": "2023-01-01",
+          "end": "2023-03-31"
+        }
+      },
+      {
+        "name": "WagumiDAO Adminとして積極的に活動",
+        "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
+        "description": "Adminとして活動しました。",
+        "properties": {
+          "page_id": "5f0761e7-2094-4105-9f5d-4307a79c2fa6",
+          "reference": []
+        },
+        "weighting": 4,
+        "date": {
+          "start": "2022-10-01",
+          "end": "2022-12-31"
+        }
+      },
+      {
         "name": "Wagumi SBTを発行",
         "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
         "description": "Wagumi SBTを申請し、発行されました。",
@@ -15,6 +57,7 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
@@ -28,19 +71,21 @@
           "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
           "reference": []
         },
+        "weighting": 2,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       },
       {
-        "name": "WagumiDAO リーダーとして活動",
+        "name": "WagumiDAO リーダーとして積極的に活動",
         "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
         "description": "WagumiDAOのリーダーを務めました。",
         "properties": {
           "page_id": "165e7ae4-c43b-4ab7-a2d7-291256baf170",
           "reference": []
         },
+        "weighting": 4,
         "date": {
           "start": "2022-07-01",
           "end": "2022-12-31"
@@ -54,6 +99,7 @@
           "page_id": "b83bbea0-5c7d-4932-b3e7-870ccf29213e",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-07-01",
           "end": "2022-09-30"
@@ -67,11 +113,20 @@
           "page_id": "772bccfb-9c9c-4b51-8c09-eaa8e0657f95",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-04-01",
           "end": "2022-06-30"
         }
       }
     ]
-  }
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 27
+    }
+  ]
 }

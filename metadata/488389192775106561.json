@@ -15,6 +15,7 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
@@ -28,6 +29,7 @@
           "page_id": "b83bbea0-5c7d-4932-b3e7-870ccf29213e",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-07-01",
           "end": "2022-09-30"
@@ -41,6 +43,7 @@
           "page_id": "772bccfb-9c9c-4b51-8c09-eaa8e0657f95",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-04-01",
           "end": "2022-06-30"
@@ -54,11 +57,20 @@
           "page_id": "de789e03-4da5-42fc-8269-67fa21d7991b",
           "reference": []
         },
+        "weighting": 4,
         "date": {
           "start": "2022-01-01",
           "end": "2022-06-30"
         }
       }
     ]
-  }
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 13
+    }
+  ]
 }

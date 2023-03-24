@@ -15,6 +15,7 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
@@ -28,6 +29,7 @@
           "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
           "reference": []
         },
+        "weighting": 2,
         "date": {
           "start": "2022-09-09",
           "end": ""
@@ -35,12 +37,13 @@
       },
       {
         "name": "IVS那覇に参加",
-        "image": "https://www.ivs.events/wp-content/uploads/2022/05/ivs-mv-2-1536x864.jpg",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4add1bd8-fa04-47de-90d5-edafa26f3ea1/d59319-61-1d73ef6cce36dc04d843-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230324%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230324T124017Z&X-Amz-Expires=3600&X-Amz-Signature=6363de5d4c1a19c4f57102d2651ce0f3126e0d934375b93fe67db4527cca0dbb&X-Amz-SignedHeaders=host&x-id=GetObject",
         "description": "IVS那覇に参加しました。",
         "properties": {
           "page_id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
           "reference": []
         },
+        "weighting": 1,
         "date": {
           "start": "2022-07-06",
           "end": "2022-07-08"
@@ -54,11 +57,20 @@
           "page_id": "9687b7b9-584b-4223-b873-966d4d317161",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-04-01",
           "end": "2022-04-30"
         }
       }
     ]
-  }
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 9
+    }
+  ]
 }

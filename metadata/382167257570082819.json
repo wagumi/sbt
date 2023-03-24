@@ -1,0 +1,34 @@
+{
+  "name": "stvjbz",
+  "description": "He/She is one of wagumi members.",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=382167257570082819",
+  "external_url": "https://wagumi-sbt.notion.site/b609f6d999e64bbf8c035813ead660f2",
+  "properties": {
+    "toknes": [],
+    "sns": {},
+    "contributions": [
+      {
+        "name": "Wagumi SBTを発行",
+        "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
+        "description": "Wagumi SBTを申請し、発行されました。",
+        "properties": {
+          "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
+          "reference": []
+        },
+        "weighting": 3,
+        "date": {
+          "start": "2022-09-09",
+          "end": ""
+        }
+      }
+    ]
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
+}

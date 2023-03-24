@@ -1,5 +1,5 @@
 {
-  "name": "Sai-Taka",
+  "name": "Taka｜DAOWorker",
   "description": "He/She is one of wagumi members.",
   "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=972123668073300009",
   "external_url": "https://wagumi-sbt.notion.site/4b97808c8bf640039f0f5b44414d5a37",
@@ -15,6 +15,7 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
@@ -28,11 +29,20 @@
           "page_id": "9572796d-acc9-4ce9-bec8-38b5e6707f0c",
           "reference": []
         },
+        "weighting": 2,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 5
+    }
+  ]
 }

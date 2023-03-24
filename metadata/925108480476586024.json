@@ -1,5 +1,5 @@
 {
-  "name": "Akiiiii",
+  "name": "Akiii",
   "description": "He/She is one of wagumi members.",
   "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=925108480476586024",
   "external_url": "https://wagumi-sbt.notion.site/e8a1d5add09142bc8948e9f599ef93fd",
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

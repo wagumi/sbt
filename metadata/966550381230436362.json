@@ -1,5 +1,5 @@
 {
-  "name": "dr.AZ \"龍\"",
+  "name": "ryuzaum",
   "description": "He/She is one of wagumi members.",
   "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=966550381230436362",
   "external_url": "https://wagumi-sbt.notion.site/37c4906da7064ebf92aa5ca917f693a6",
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

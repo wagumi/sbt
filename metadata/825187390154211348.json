@@ -1,5 +1,5 @@
 {
-  "name": "tokio",
+  "name": "toki",
   "description": "He/She is one of wagumi members.",
   "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=825187390154211348",
   "external_url": "https://wagumi-sbt.notion.site/9cdd4f00937f4c4cbad06b7bf6fe18b3",
@@ -15,11 +15,20 @@
           "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-09-09",
           "end": ""
         }
       }
     ]
-  }
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }

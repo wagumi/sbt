@@ -15,11 +15,20 @@
           "page_id": "772bccfb-9c9c-4b51-8c09-eaa8e0657f95",
           "reference": []
         },
+        "weighting": 3,
         "date": {
           "start": "2022-04-01",
           "end": "2022-06-30"
         }
       }
     ]
-  }
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
 }
