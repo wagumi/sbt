@@ -1,7 +1,7 @@
 {
   "name": "sabi",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=962649602966814732",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=962649602966814732",
   "external_url": "https://wagumi-sbt.notion.site/bc897c7c817f4e1db7629919b7b9d150",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

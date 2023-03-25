@@ -1,7 +1,7 @@
 {
   "name": "chanoha",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=995124403266408458",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=995124403266408458",
   "external_url": "https://wagumi-sbt.notion.site/c4b138f6889846f89f8971bde6dce478",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

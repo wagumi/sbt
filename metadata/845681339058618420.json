@@ -1,7 +1,7 @@
 {
   "name": "BABEL",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=845681339058618420",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=845681339058618420",
   "external_url": "https://wagumi-sbt.notion.site/83c07c60a29345ae92b45ed1d71cc48c",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

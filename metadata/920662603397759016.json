@@ -1,7 +1,7 @@
 {
   "name": "yyhr922",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=920662603397759016",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=920662603397759016",
   "external_url": "https://wagumi-sbt.notion.site/c3c121cf5d034fe0af68e3e5486d8b50",
   "properties": {
     "toknes": [],
@@ -37,7 +37,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

@@ -1,7 +1,7 @@
 {
   "name": "tacrew",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=921797667577802772",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=921797667577802772",
   "external_url": "https://wagumi-sbt.notion.site/34b5cd1e5d7b4d379d571322b3259568",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

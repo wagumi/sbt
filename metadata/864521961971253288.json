@@ -1,7 +1,7 @@
 {
   "name": "t0919s",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=864521961971253288",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=864521961971253288",
   "external_url": "https://wagumi-sbt.notion.site/85b7f4af5dbf4b208523b755f05c0e3f",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

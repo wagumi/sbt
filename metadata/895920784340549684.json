@@ -1,7 +1,7 @@
 {
   "name": "Hirox",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=895920784340549684",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=895920784340549684",
   "external_url": "https://wagumi-sbt.notion.site/a39153feda174646b5c98183ae25c1fc",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

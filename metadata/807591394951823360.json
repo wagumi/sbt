@@ -1,7 +1,7 @@
 {
   "name": "kiz77",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=807591394951823360",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=807591394951823360",
   "external_url": "https://wagumi-sbt.notion.site/ac869e50f8b2494bbaec3f17e4801468",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

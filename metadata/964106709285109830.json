@@ -1,7 +1,7 @@
 {
   "name": "abo🥑山の肉🐳cado🥰だお",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=964106709285109830",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=964106709285109830",
   "external_url": "https://wagumi-sbt.notion.site/bb7af35aca454a0e92ec2aaad9d9c730",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

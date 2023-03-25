@@ -1,7 +1,7 @@
 {
   "name": "Applecider(AC)",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=936949880461590578",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=936949880461590578",
   "external_url": "https://wagumi-sbt.notion.site/cefef5029fb14c5da5b39c9e94a44e51",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

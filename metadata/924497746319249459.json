@@ -1,7 +1,7 @@
 {
   "name": "RYU",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=924497746319249459",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=924497746319249459",
   "external_url": "https://wagumi-sbt.notion.site/c9681b456cc24e2c8afe937dd8632d47",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

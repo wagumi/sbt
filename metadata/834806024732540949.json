@@ -1,7 +1,7 @@
 {
   "name": "EBUCHI",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=834806024732540949",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=834806024732540949",
   "external_url": "https://wagumi-sbt.notion.site/e0b5a179b7ee471b9a3da45f51d506a7",
   "properties": {
     "toknes": [],
@@ -37,7 +37,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

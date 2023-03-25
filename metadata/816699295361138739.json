@@ -1,7 +1,7 @@
 {
   "name": "Yuhei",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=816699295361138739",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=816699295361138739",
   "external_url": "https://wagumi-sbt.notion.site/522e7d6a75d84b3f95847272e5408466",
   "properties": {
     "toknes": [],
@@ -37,7 +37,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

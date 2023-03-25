@@ -1,7 +1,7 @@
 {
   "name": "Hayato",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=809128177976344696",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=809128177976344696",
   "external_url": "https://wagumi-sbt.notion.site/b375a7d5ed7142cda8804bf936408f34",
   "properties": {
     "toknes": [],
@@ -37,7 +37,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

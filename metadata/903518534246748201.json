@@ -1,7 +1,7 @@
 {
   "name": "わたなべとおる",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=903518534246748201",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=903518534246748201",
   "external_url": "https://wagumi-sbt.notion.site/77217327744844fa979193d2c4ecf905",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

@@ -1,7 +1,7 @@
 {
   "name": "Tamagodo-fu",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=826999657459875840",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=826999657459875840",
   "external_url": "https://wagumi-sbt.notion.site/293fc92fd17441118eba38acfe82716c",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

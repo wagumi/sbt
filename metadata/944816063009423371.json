@@ -1,7 +1,7 @@
 {
   "name": "mashharuki",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=944816063009423371",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=944816063009423371",
   "external_url": "https://wagumi-sbt.notion.site/97022e5b0e9f41f1ab44a68b70978b32",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },
