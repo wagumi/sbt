@@ -1,7 +1,7 @@
 {
   "name": "ydaikai",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=708655487654035496",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=708655487654035496",
   "external_url": "https://wagumi-sbt.notion.site/5fe11ca1e0144160849a2766d131a88a",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

@@ -1,7 +1,7 @@
 {
   "name": "aki-ro",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=721697756640575519",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=721697756640575519",
   "external_url": "https://wagumi-sbt.notion.site/efbdec5a53a547668c50ff31649dd7db",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

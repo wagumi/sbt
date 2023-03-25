@@ -1,7 +1,7 @@
 {
   "name": "stvjbz",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=382167257570082819",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=382167257570082819",
   "external_url": "https://wagumi-sbt.notion.site/b609f6d999e64bbf8c035813ead660f2",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

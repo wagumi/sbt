@@ -1,7 +1,7 @@
 {
   "name": "kimymt.eth",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=701379379678150746",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=701379379678150746",
   "external_url": "https://wagumi-sbt.notion.site/895a3552b4924455a62ae0babaaecff9",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

@@ -1,7 +1,7 @@
 {
   "name": "LIB",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=700246962016092160",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=700246962016092160",
   "external_url": "https://wagumi-sbt.notion.site/eb0391572f5345d6aac6aa149452682c",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

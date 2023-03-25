@@ -1,7 +1,7 @@
 {
   "name": "ryokado.eth / FV",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=644396736214859831",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=644396736214859831",
   "external_url": "https://wagumi-sbt.notion.site/73d66ccd97c3403983db7730b2c55058",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

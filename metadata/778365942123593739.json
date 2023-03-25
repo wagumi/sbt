@@ -1,7 +1,7 @@
 {
   "name": "johnextra",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=778365942123593739",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=778365942123593739",
   "external_url": "https://wagumi-sbt.notion.site/21b0fbc35d7444db8d8bf906e02f9fb2",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

@@ -1,7 +1,7 @@
 {
   "name": "mimio",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=361014131714686978",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=361014131714686978",
   "external_url": "https://wagumi-sbt.notion.site/79f07efc0b52447e88fc61d8727e19cc",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

@@ -1,7 +1,7 @@
 {
   "name": "YukiJP",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=365413105058054144",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=365413105058054144",
   "external_url": "https://wagumi-sbt.notion.site/916622be203f497aa68d82b8192a230a",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

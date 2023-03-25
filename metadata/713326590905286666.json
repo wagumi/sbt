@@ -1,7 +1,7 @@
 {
   "name": "Monep | 1Block",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=713326590905286666",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=713326590905286666",
   "external_url": "https://wagumi-sbt.notion.site/a8b1a6d843d44b68b1bb0df495b46e88",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

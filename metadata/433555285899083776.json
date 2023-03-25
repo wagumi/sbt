@@ -1,7 +1,7 @@
 {
   "name": "Rapid_Fire_y",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=433555285899083776",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=433555285899083776",
   "external_url": "https://wagumi-sbt.notion.site/b845c36e46ae4d52b7349c6aaa0d1e3a",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

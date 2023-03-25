@@ -1,7 +1,7 @@
 {
   "name": "muarata",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=450293970493505536",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=450293970493505536",
   "external_url": "https://wagumi-sbt.notion.site/21d4fe5ca2d94a239115353eb23773b0",
   "properties": {
     "toknes": [],
@@ -51,7 +51,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

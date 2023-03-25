@@ -1,7 +1,7 @@
 {
   "name": "gerray",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=753917296732536907",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=753917296732536907",
   "external_url": "https://wagumi-sbt.notion.site/999b7415bce94c8089cec313437fa577",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

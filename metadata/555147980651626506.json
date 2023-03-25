@@ -1,7 +1,7 @@
 {
   "name": "アキ",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=555147980651626506",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=555147980651626506",
   "external_url": "https://wagumi-sbt.notion.site/e9bfb5669c4e4a709cdb78e230bc7ee4",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

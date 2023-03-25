@@ -1,7 +1,7 @@
 {
   "name": "inoishi",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=315029523609550851",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=315029523609550851",
   "external_url": "https://wagumi-sbt.notion.site/6cde734cb45b41c0a41c1cf797b19e3d",
   "properties": {
     "toknes": [],
@@ -37,7 +37,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

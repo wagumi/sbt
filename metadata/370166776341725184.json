@@ -1,7 +1,7 @@
 {
   "name": "CosmoMax10  (CrazyRansom)",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=370166776341725184",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=370166776341725184",
   "external_url": "https://wagumi-sbt.notion.site/cca882dbcd424e7aa61e3b087e705a66",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

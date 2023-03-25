@@ -1,7 +1,7 @@
 {
   "name": "june29",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=378166125294256129",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=378166125294256129",
   "external_url": "https://wagumi-sbt.notion.site/0ea62e3da8fb4245aac602221ebafe6f",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

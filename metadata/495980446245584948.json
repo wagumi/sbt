@@ -1,7 +1,7 @@
 {
   "name": "maki",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=495980446245584948",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=495980446245584948",
   "external_url": "https://wagumi-sbt.notion.site/d6793b7dd8754af5bfedc1e5d14c3777",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

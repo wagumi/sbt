@@ -1,7 +1,7 @@
 {
   "name": "IT",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=466959249617059840",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=466959249617059840",
   "external_url": "https://wagumi-sbt.notion.site/b1e593bf3f594c99961c5a8509553ed2",
   "properties": {
     "toknes": [],
@@ -37,7 +37,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

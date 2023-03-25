@@ -1,7 +1,7 @@
 {
   "name": "Mitsu",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=611696577794539540",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=611696577794539540",
   "external_url": "https://wagumi-sbt.notion.site/1963ac1a73c94ceeb6c4718df13af94a",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

@@ -1,7 +1,7 @@
 {
   "name": "Polonity",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=596920177111597067",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=596920177111597067",
   "external_url": "https://wagumi-sbt.notion.site/8680164eceb54c0c98047856ccd20808",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

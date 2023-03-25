@@ -1,7 +1,7 @@
 {
   "name": "kawai",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=502649785350881281",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=502649785350881281",
   "external_url": "https://wagumi-sbt.notion.site/c46153e819884813a556d67883634440",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },
