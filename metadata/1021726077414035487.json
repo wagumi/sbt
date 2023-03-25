@@ -1,7 +1,7 @@
 {
   "name": "sasaki",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=1021726077414035487",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=1021726077414035487",
   "external_url": "https://wagumi-sbt.notion.site/ec1516998d944df58dff365499594a6f",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

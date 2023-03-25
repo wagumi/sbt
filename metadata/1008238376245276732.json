@@ -1,7 +1,7 @@
 {
   "name": "Win-Win",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=1008238376245276732",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=1008238376245276732",
   "external_url": "https://wagumi-sbt.notion.site/c806dca40c6d4433a688fe0a79ce2e93",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

@@ -1,7 +1,7 @@
 {
   "name": "sangraal",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=1021766697817997316",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=1021766697817997316",
   "external_url": "https://wagumi-sbt.notion.site/97ac5e10d803411ba8a8804a13e8ee2a",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

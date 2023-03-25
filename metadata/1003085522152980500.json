@@ -1,7 +1,7 @@
 {
   "name": "Tatsuya",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=1003085522152980500",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=1003085522152980500",
   "external_url": "https://wagumi-sbt.notion.site/9a96d2f486fb4c529a56d9fdfc4306a0",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },

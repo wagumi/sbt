@@ -1,7 +1,7 @@
 {
   "name": "nose360",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=1017006785950920704",
+  "image": "https://wagumi-sbt.ukishima.repl.co/image?userid=1017006785950920704",
   "external_url": "https://wagumi-sbt.notion.site/86fd72e9495b4a11a900e52d79892684",
   "properties": {
     "toknes": [],
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },
