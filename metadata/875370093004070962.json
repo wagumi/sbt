@@ -1,5 +1,5 @@
 {
-  "name": "etaroid",
+  "name": "gojo",
   "description": "He/She is one of wagumi members.",
   "image": "https://apps.wagumi.xyz/sbt/image?userid=875370093004070962",
   "external_url": "https://wagumi-sbt.notion.site/c813c27c7cee469896501438dfa5bef0",
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "attribute": [
+  "attributes": [
     {
       "trait_type": "weighting"
     },
