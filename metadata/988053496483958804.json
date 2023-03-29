@@ -15,7 +15,6 @@
           "page_id": "c822ee89-d3a8-464f-87bb-dee91a5d4053",
           "reference": []
         },
-        "weighting": 3,
         "date": {
           "start": "2022-09-30",
           "end": ""
@@ -28,7 +27,7 @@
       "trait_type": "weighting"
     },
     {
-      "value": 3
+      "value": {}
     }
   ]
 }
