@@ -60,7 +60,7 @@ const connect = async () => {
 							symbol: "MATIC",
 							decimals: 18,
 						},
-						rpcUrls: ["https://polygon-rpc.com"],
+						rpcUrls: ["https://polygon-rpc.com/"],
 						blockExplorerUrls: ["https://polygonscan.com/"],
 					},
 				],
