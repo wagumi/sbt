@@ -22,20 +22,6 @@
         }
       },
       {
-        "name": "IVS那覇に参加",
-        "image": "https://pbs.twimg.com/media/FXI-GoXVEAItzIv.jpg",
-        "description": "IVS那覇に参加しました。",
-        "properties": {
-          "page_id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
-          "reference": []
-        },
-        "weighting": 1,
-        "date": {
-          "start": "2022-07-06",
-          "end": "2022-07-08"
-        }
-      },
-      {
         "name": "和組東京オフ会に参加",
         "image": "https://cdn.discordapp.com/attachments/994575868007555112/1019103681297268817/unknown.png",
         "description": "和組として国内単独開催初となるオフ会に参加しました。",
@@ -47,6 +33,20 @@
         "date": {
           "start": "2022-09-09",
           "end": ""
+        }
+      },
+      {
+        "name": "IVS那覇に参加",
+        "image": "https://pbs.twimg.com/media/FXI-GoXVEAItzIv.jpg",
+        "description": "IVS那覇に参加しました。",
+        "properties": {
+          "page_id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
+          "reference": []
+        },
+        "weighting": 1,
+        "date": {
+          "start": "2022-07-06",
+          "end": "2022-07-08"
         }
       }
     ]

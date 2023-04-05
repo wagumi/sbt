@@ -22,20 +22,6 @@
         }
       },
       {
-        "name": "IVS那覇に参加",
-        "image": "https://pbs.twimg.com/media/FXI-GoXVEAItzIv.jpg",
-        "description": "IVS那覇に参加しました。",
-        "properties": {
-          "page_id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
-          "reference": []
-        },
-        "weighting": 1,
-        "date": {
-          "start": "2022-07-06",
-          "end": "2022-07-08"
-        }
-      },
-      {
         "name": "IVS那覇で登壇",
         "image": "https://media.discordapp.net/attachments/981208746103537744/994869469476298823/IMG_0444.jpg?width=331&height=442",
         "description": "IVS那覇でセッションに登壇しました。",
@@ -47,6 +33,20 @@
         "date": {
           "start": "2022-07-08",
           "end": ""
+        }
+      },
+      {
+        "name": "IVS那覇に参加",
+        "image": "https://pbs.twimg.com/media/FXI-GoXVEAItzIv.jpg",
+        "description": "IVS那覇に参加しました。",
+        "properties": {
+          "page_id": "a89eda4d-15a0-4161-8e98-cc7f2997c358",
+          "reference": []
+        },
+        "weighting": 1,
+        "date": {
+          "start": "2022-07-06",
+          "end": "2022-07-08"
         }
       }
     ]
