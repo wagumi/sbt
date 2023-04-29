@@ -1,0 +1,34 @@
+{
+  "name": "Kuriyama",
+  "description": "He/She is one of wagumi members.",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=1081544803885514852",
+  "external_url": "https://wagumi-sbt.notion.site/dba9995158ea442d885c02dcd4466c6c",
+  "properties": {
+    "toknes": [],
+    "sns": {},
+    "contributions": [
+      {
+        "name": "Wagumi SBTを発行",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4ccab2b7-8e11-439f-82d6-45a81d09b1fa/sbt.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230429T013748Z&X-Amz-Expires=3600&X-Amz-Signature=8cb42202ea1c0c65e13b929aa9e405a935a262dbf46591db1f90cbcfe3792764&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "description": "WagumiSBTを申請し、発行されました (v3)",
+        "properties": {
+          "page_id": "0f19d0b0-de8a-4194-8ed8-93e0b5ee73fb",
+          "reference": []
+        },
+        "weighting": 3,
+        "date": {
+          "start": "2023-04-27",
+          "end": ""
+        }
+      }
+    ]
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting"
+    },
+    {
+      "value": 3
+    }
+  ]
+}
