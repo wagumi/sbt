@@ -1,8 +1,8 @@
 {
-  "name": "まゆ(Mayu,真の事由,Diggin'InnateCause)",
+  "name": "HRSHIT",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=770099433089269770",
-  "external_url": "https://wagumi-sbt.notion.site/a94e35443e86413d94d853393987144a",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=810027901600530444",
+  "external_url": "https://wagumi-sbt.notion.site/4d1ad80f578b46148e1283f4cb605a4f",
   "properties": {
     "toknes": [],
     "sns": {},
@@ -28,7 +28,7 @@
       "trait_type": "weighting"
     },
     {
-      "value": 3
+      "value": null
     }
   ]
 }
