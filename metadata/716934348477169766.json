@@ -1,8 +1,8 @@
 {
-  "name": "Koichi.web3",
+  "name": "ゆあ",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=191155390040375296",
-  "external_url": "https://wagumi-sbt.notion.site/e8376280efbc4bbbb139be197b63c545",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=716934348477169766",
+  "external_url": "https://wagumi-sbt.notion.site/c7dc06df65644d639847832062d5254b",
   "properties": {
     "toknes": [],
     "sns": {},
@@ -28,7 +28,7 @@
       "trait_type": "weighting"
     },
     {
-      "value": 3
+      "value": null
     }
   ]
 }
