@@ -9,7 +9,7 @@
     "contributions": [
       {
         "name": "Wagumi SBTを発行",
-        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4ccab2b7-8e11-439f-82d6-45a81d09b1fa/sbt.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230505%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230505T014202Z&X-Amz-Expires=3600&X-Amz-Signature=239415b7d2bd999ac56f0ac473faf5d13026db00823d8a1b1772c0780300669a&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4ccab2b7-8e11-439f-82d6-45a81d09b1fa/sbt.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230513T161707Z&X-Amz-Expires=3600&X-Amz-Signature=5d1c152dce1c46916612d6ce0d41b0fc6978bb95d2dd71a4c71659d64896fccc&X-Amz-SignedHeaders=host&x-id=GetObject",
         "description": "WagumiSBTを申請し、発行されました (v3)",
         "properties": {
           "page_id": "0f19d0b0-de8a-4194-8ed8-93e0b5ee73fb",
