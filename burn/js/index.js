@@ -1,10 +1,10 @@
 const provider = getEthersProvider();
 
-// const polygonChainId = 137;
-// const contractAddress = "0xef756b67b90026F91D047D1b991F87D657309A42";
+const polygonChainId = 137;
+const contractAddress = "0xef756b67b90026F91D047D1b991F87D657309A42";
 
-const polygonChainId = 80001;
-const contractAddress = "0x8e8B606889BbCA229C2c4D1026A3E6272894130D";
+// const polygonChainId = 80001;
+// const contractAddress = "0x8e8B606889BbCA229C2c4D1026A3E6272894130D";
 
 const checkTokenId = async () => {
   const accounts = await provider.send("eth_requestAccounts", []);
@@ -47,39 +47,39 @@ const connect = async () => {
   }
 
   try {
-    // await ethereum.request({
-    //   method: "wallet_addEthereumChain",
-    //   params: [
-    //     {
-    //       chainId: `0x${(137).toString(16)}`,
-    //       chainName: "Polygon Mainnet",
-    //       nativeCurrency: {
-    //         name: "MATIC",
-    //         symbol: "MATIC",
-    //         decimals: 18,
-    //       },
-    //       rpcUrls: ["https://polygon-rpc.com/"],
-    //       blockExplorerUrls: ["https://polygonscan.com/"],
-    //     },
-    //   ],
-    // });
-
-    const result = await ethereum.request({
+    await ethereum.request({
       method: "wallet_addEthereumChain",
       params: [
         {
-          chainId: `0x${polygonChainId.toString(16)}`,
-          chainName: "Mumbai",
+          chainId: `0x${(137).toString(16)}`,
+          chainName: "Polygon Mainnet",
           nativeCurrency: {
             name: "MATIC",
             symbol: "MATIC",
             decimals: 18,
           },
-          rpcUrls: ["https://matic-mumbai.chainstacklabs.com"],
-          blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
+          rpcUrls: ["https://polygon-rpc.com/"],
+          blockExplorerUrls: ["https://polygonscan.com/"],
         },
       ],
     });
+
+  //   const result = await ethereum.request({
+  //     method: "wallet_addEthereumChain",
+  //     params: [
+  //       {
+  //         chainId: `0x${polygonChainId.toString(16)}`,
+  //         chainName: "Mumbai",
+  //         nativeCurrency: {
+  //           name: "MATIC",
+  //           symbol: "MATIC",
+  //           decimals: 18,
+  //         },
+  //         rpcUrls: ["https://matic-mumbai.chainstacklabs.com"],
+  //         blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
+  //       },
+  //     ],
+  //   });
   } catch (e) {
     console.log(e);
   }
