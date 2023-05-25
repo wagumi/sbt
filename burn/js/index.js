@@ -17,19 +17,17 @@ const checkTokenId = async () => {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-    }
+    },
   });
   const result = await response.json();
   if (response.status === 200) {
     document.getElementById("tokenId").value = result.tokenId;
     console.log(result);
-  }
-  else if(response.status === 404){
+  } else if (response.status === 404) {
     document.getElementById("tokenId").value = "";
     logs("このアドレスはWagumiSBTを保有していません");
     console.error(result.error);
-  }
-  else{
+  } else {
     console.error(result);
   }
 };
@@ -48,41 +46,51 @@ const connect = async () => {
 
   try {
     await ethereum.request({
-      method: "wallet_addEthereumChain",
-      params: [
-        {
-          chainId: `0x${(137).toString(16)}`,
-          chainName: "Polygon Mainnet",
-          nativeCurrency: {
-            name: "MATIC",
-            symbol: "MATIC",
-            decimals: 18,
-          },
-          rpcUrls: ["https://polygon-rpc.com/"],
-          blockExplorerUrls: ["https://polygonscan.com/"],
-        },
-      ],
+      method: "wallet_switchEthereumChain",
+      params: [{ chainId: `0x${(137).toString(16)}` }],
     });
-
-  //   const result = await ethereum.request({
-  //     method: "wallet_addEthereumChain",
-  //     params: [
-  //       {
-  //         chainId: `0x${polygonChainId.toString(16)}`,
-  //         chainName: "Mumbai",
-  //         nativeCurrency: {
-  //           name: "MATIC",
-  //           symbol: "MATIC",
-  //           decimals: 18,
-  //         },
-  //         rpcUrls: ["https://matic-mumbai.chainstacklabs.com"],
-  //         blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
-  //       },
-  //     ],
-  //   });
-  } catch (e) {
-    console.log(e);
+  } catch (error) {
+    if (error.code === 4902) {
+      try {
+        await ethereum.request({
+          method: "wallet_addEthereumChain",
+          params: [
+            {
+              chainId: `0x${(137).toString(16)}`,
+              chainName: "Polygon Mainnet",
+              nativeCurrency: {
+                name: "MATIC",
+                symbol: "MATIC",
+                decimals: 18,
+              },
+              rpcUrls: ["https://polygon-rpc.com/"],
+              blockExplorerUrls: ["https://polygonscan.com/"],
+            },
+          ],
+        });
+      } catch (addError) {
+        console.error(addError.message, { cause: { addError } });
+      }
+    }
   }
+
+
+    //   const result = await ethereum.request({
+    //     method: "wallet_addEthereumChain",
+    //     params: [
+    //       {
+    //         chainId: `0x${polygonChainId.toString(16)}`,
+    //         chainName: "Mumbai",
+    //         nativeCurrency: {
+    //           name: "MATIC",
+    //           symbol: "MATIC",
+    //           decimals: 18,
+    //         },
+    //         rpcUrls: ["https://matic-mumbai.chainstacklabs.com"],
+    //         blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
+    //       },
+    //     ],
+    //   });
 
   const { chainId } = await provider.getNetwork();
   if (chainId !== polygonChainId) {
