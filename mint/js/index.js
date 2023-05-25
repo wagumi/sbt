@@ -48,37 +48,36 @@ const connect = async () => {
     }
 
     try {
-      try {
-        await ethereum.request({
-          method: "wallet_switchEthereumChain",
-          params: [{ chainId: `0x${(137).toString(16)}` }],
-        });
-      } catch (error) {
-        if (error.code === 4902) {
-          try {
-            await ethereum.request({
-              method: "wallet_addEthereumChain",
-              params: [
-                {
-                  chainId: `0x${(137).toString(16)}`,
-                  chainName: "Polygon Mainnet",
-                  nativeCurrency: {
-                    name: "MATIC",
-                    symbol: "MATIC",
-                    decimals: 18,
-                  },
-                  rpcUrls: ["https://polygon-rpc.com/"],
-                  blockExplorerUrls: ["https://polygonscan.com/"],
+      await ethereum.request({
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: `0x${(137).toString(16)}` }],
+      });
+    } catch (error) {
+      if (error.code === 4902) {
+        try {
+          await ethereum.request({
+            method: "wallet_addEthereumChain",
+            params: [
+              {
+                chainId: `0x${(137).toString(16)}`,
+                chainName: "Polygon Mainnet",
+                nativeCurrency: {
+                  name: "MATIC",
+                  symbol: "MATIC",
+                  decimals: 18,
                 },
-              ],
-            });
-          } catch (addError) {
-            console.error(addError.message, { cause: { addError } });
-          }
+                rpcUrls: ["https://polygon-rpc.com/"],
+                blockExplorerUrls: ["https://polygonscan.com/"],
+              },
+            ],
+          });
+        } catch (addError) {
+          console.error(addError.message, { cause: { addError } });
         }
       }
+    }
 
-      /*
+    /*
 			const result = await ethereum.request({
 				method: "wallet_addEthereumChain",
 				params: [
@@ -96,9 +95,6 @@ const connect = async () => {
 				],
 			});
 			*/
-    } catch (e) {
-      console.log(e);
-    }
 
     const { chainId } = await provider.getNetwork();
     if (chainId !== polygonChainId) {
