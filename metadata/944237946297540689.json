@@ -1,5 +1,5 @@
 {
-  "name": "Hero K (Aka こみょん 코묭)",
+  "name": "Your Hero",
   "description": "He/She is one of wagumi members.",
   "image": "https://apps.wagumi.xyz/sbt/image?userid=944237946297540689",
   "external_url": "https://wagumi-sbt.notion.site/272ab312a32c4a3bbb7a1a383be2672e",
@@ -25,9 +25,7 @@
   },
   "attributes": [
     {
-      "trait_type": "weighting"
-    },
-    {
+      "trait_type": "weighting",
       "value": 3
     }
   ]

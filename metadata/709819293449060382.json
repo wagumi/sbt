@@ -1,0 +1,32 @@
+{
+  "name": "織村ゆき",
+  "description": "He/She is one of wagumi members.",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=709819293449060382",
+  "external_url": "https://wagumi-sbt.notion.site/3bdf1acb5c70402bb42ecaff41a00536",
+  "properties": {
+    "toknes": [],
+    "sns": {},
+    "contributions": [
+      {
+        "name": "Wagumi SBTを発行",
+        "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
+        "description": "WagumiSBTを申請し、発行されました (v3)",
+        "properties": {
+          "page_id": "0f19d0b0-de8a-4194-8ed8-93e0b5ee73fb",
+          "reference": []
+        },
+        "weighting": 3,
+        "date": {
+          "start": "2023-04-27",
+          "end": ""
+        }
+      }
+    ]
+  },
+  "attributes": [
+    {
+      "trait_type": "weighting",
+      "value": 3
+    }
+  ]
+}
