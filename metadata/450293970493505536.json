@@ -53,9 +53,7 @@
   },
   "attributes": [
     {
-      "trait_type": "weighting"
-    },
-    {
+      "trait_type": "weighting",
       "value": 8
     }
   ]
