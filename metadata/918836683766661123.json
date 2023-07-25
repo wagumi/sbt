@@ -8,6 +8,20 @@
     "sns": {},
     "contributions": [
       {
+        "name": "2023年4-6月期Adminとして活動",
+        "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
+        "description": "2023年4-6月期のAdminとして活動しました",
+        "properties": {
+          "page_id": "ca8e2f56-4510-4493-a1d5-5fc66b3c8410",
+          "reference": []
+        },
+        "weighting": 4,
+        "date": {
+          "start": "2023-04-01",
+          "end": "2023-06-30"
+        }
+      },
+      {
         "name": "Wagumi SBTを発行",
         "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
         "description": "Wagumi SBTを申請し、発行されました。",
@@ -54,7 +68,7 @@
   "attributes": [
     {
       "trait_type": "weighting",
-      "value": 6
+      "value": 10
     }
   ]
 }
