@@ -8,6 +8,20 @@
     "sns": {},
     "contributions": [
       {
+        "name": "本番メンテナンス作業に貢献",
+        "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
+        "description": "和組本番Azureサーバのメモリ増設作業を行った",
+        "properties": {
+          "page_id": "da26c97f-38e6-421c-9571-2854547f4349",
+          "reference": []
+        },
+        "weighting": 2,
+        "date": {
+          "start": "2023-07-30",
+          "end": ""
+        }
+      },
+      {
         "name": "イベントレピュテーションボットを開発・運用",
         "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
         "description": "https://github.com/wagumi/manage-event-attendees-bot",
@@ -152,7 +166,7 @@
   "attributes": [
     {
       "trait_type": "weighting",
-      "value": 35
+      "value": 37
     }
   ]
 }
