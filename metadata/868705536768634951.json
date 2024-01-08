@@ -1,8 +1,8 @@
 {
-  "name": "tatsuya9406",
+  "name": "もよにん",
   "description": "He/She is one of wagumi members.",
-  "image": "https://apps.wagumi.xyz/sbt/image?userid=1003085522152980500",
-  "external_url": "https://wagumi-sbt.notion.site/9a96d2f486fb4c529a56d9fdfc4306a0",
+  "image": "https://apps.wagumi.xyz/sbt/image?userid=868705536768634951",
+  "external_url": "https://wagumi-sbt.notion.site/5a94cd8ca4664a1b86531c24c03ac145",
   "properties": {
     "toknes": [],
     "sns": {},
@@ -10,14 +10,14 @@
       {
         "name": "Wagumi SBTを発行",
         "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
-        "description": "Wagumi SBTを申請し、発行されました。",
+        "description": "WagumiSBTを申請し、発行されました (v3)",
         "properties": {
-          "page_id": "82462e9c-3a16-47cd-bd19-784671cbdf05",
+          "page_id": "0f19d0b0-de8a-4194-8ed8-93e0b5ee73fb",
           "reference": []
         },
         "weighting": 3,
         "date": {
-          "start": "2022-09-09",
+          "start": "2023-04-27",
           "end": ""
         }
       }

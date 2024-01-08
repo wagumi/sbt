@@ -1,5 +1,5 @@
 {
-  "name": "自律分散型メイド",
+  "name": "ikisuke",
   "description": "He/She is one of wagumi members.",
   "image": "https://apps.wagumi.xyz/sbt/image?userid=937906941257199667",
   "external_url": "https://wagumi-sbt.notion.site/4bda005ec17e4af0aa51850ff5f0763e",
@@ -7,6 +7,20 @@
     "toknes": [],
     "sns": {},
     "contributions": [
+      {
+        "name": "2023年7-9月期Adminとして活動",
+        "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
+        "description": "2023年7-9月期のAdminとして活動しました",
+        "properties": {
+          "page_id": "af8678a0-551e-4a3e-9339-e990f240e8a5",
+          "reference": []
+        },
+        "weighting": 4,
+        "date": {
+          "start": "2023-10-01",
+          "end": ""
+        }
+      },
       {
         "name": "イベントレピュテーションボットを開発・運用",
         "image": "https://pbs.twimg.com/profile_images/1465762338871644162/nYSe4c4G_400x400.jpg",
@@ -18,6 +32,20 @@
         "weighting": 4,
         "date": {
           "start": "2023-07-03",
+          "end": ""
+        }
+      },
+      {
+        "name": "Wagumi SBTを発行",
+        "image": "https://openseauserdata.com/files/6df1bc1186205078af668045961f0a67.jpg",
+        "description": "WagumiSBTを申請し、発行されました (v3)",
+        "properties": {
+          "page_id": "0f19d0b0-de8a-4194-8ed8-93e0b5ee73fb",
+          "reference": []
+        },
+        "weighting": 3,
+        "date": {
+          "start": "2023-04-27",
           "end": ""
         }
       },
@@ -82,7 +110,7 @@
   "attributes": [
     {
       "trait_type": "weighting",
-      "value": 13
+      "value": 20
     }
   ]
 }
