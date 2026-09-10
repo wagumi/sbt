@@ -19,10 +19,6 @@
       rel="shortcut icon"
       href="https://wagumi.github.io/sbt/mint/img/wagumi_logo.png"
     />
-    <script
-      src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"
-      type="application/javascript"
-    ></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style_custom.css" />
   </head>
@@ -73,33 +69,13 @@
 
             <div class="tx-guide__input">
               <div class="tx-guide__input_inner">
-                <div class="tx-guide__heading-sub">Address</div>
-                <div class="tx-guide__message" id="address">
-                  YOUR ADDRESS
+                <div class="tx-guide__heading-sub">発行受付は終了しました</div>
+                <div class="tx-guide__message">
+                  和組DAOのクローズに伴い、WAGUMI SBTの新規発行は終了しました。<br>
+                  すでに発行済みのSBTはそのまま保有できます。<br>
+                  手放したい場合は<a href="../burn/">BURNページ</a>から焼却できます。
                 </div>
-                <div class="tx-guide__heading-sub">User Discord Name</div>
-                <div class="tx-guide__message" id="username">YOUR NAME</div>
-                <div class="tx-guide__heading-sub">User ID (TOKEN ID)</div>
-                <div class="tx-guide__message" id="userid">YOUR USER ID</div>
               </div>
-            </div>
-
-            <div id="mintbutton_section_pc" class="tx-guide__list">
-              <div class="tx-guide__list-item">
-                <a class="tx-guide__button" id="mintButton">発行する</a>
-              </div>
-            </div>
-
-            <div id="mintbutton_section_mobile" class="tx-guide__list">
-              <div class="tx-guide__list-item">
-                <h2>モバイル(Metamask)の方</h2>
-                <a class="tx-guide__button" id="mintButton_mobile">Metamaskで開く</a>
-                <div class="note">Metamaskのモバイルアプリが開きますので、そのページで「発行する」をタップして下さい。</div>
-              </div>
-            </div>
-
-            <div class="tx-guide__logs_wapper">
-              <div class="tx-guide__message" id="logs">操作ログ</div>
             </div>
           </div>
 
@@ -133,6 +109,5 @@
 
     </main>
 
-    <script src="./js/index.js"></script>
   </body>
 </html>

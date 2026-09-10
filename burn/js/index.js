@@ -6,32 +6,6 @@ const contractAddress = "0xef756b67b90026F91D047D1b991F87D657309A42";
 // const polygonChainId = 80001;
 // const contractAddress = "0x8e8B606889BbCA229C2c4D1026A3E6272894130D";
 
-const checkTokenId = async () => {
-  const accounts = await provider.send("eth_requestAccounts", []);
-  if (accounts.length === 0) {
-    return null;
-  }
-
-  const url = `https://apps.wagumi.xyz/sbt/tokenId?address=${accounts[0]}`;
-  const response = await fetch(url, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  const result = await response.json();
-  if (response.status === 200) {
-    document.getElementById("tokenId").value = result.tokenId;
-    console.log(result);
-  } else if (response.status === 404) {
-    document.getElementById("tokenId").value = "";
-    logs("このアドレスはWagumiSBTを保有していません");
-    console.error(result.error);
-  } else {
-    console.error(result);
-  }
-};
-
 const connect = async () => {
   if (typeof window.ethereum === "undefined") {
     logs("ウォレットが接続できていません");
@@ -108,9 +82,8 @@ window.ethereum.on("chainChanged", (chainId) => {
   window.location.reload();
 });
 
-window.ethereum.on("accountsChanged", async (account) => {
+window.ethereum.on("accountsChanged", (account) => {
   console.log(`changed account:${account}`);
-  await checkTokenId();
 });
 
 const burnButton = document.getElementById("burnButton");
@@ -127,24 +100,6 @@ burnButton.addEventListener("click", async () => {
       console.log(e);
     } finally {
       burnButton.ariaDisabled = null;
-    }
-  }
-});
-
-const checkButton = document.getElementById("checkButton");
-checkButton.addEventListener("click", async () => {
-  if (checkButton.ariaDisabled === null) {
-    try {
-      checkButton.ariaDisabled = "connect";
-      const result = await connect();
-      if (result) {
-        checkButton.ariaDisabled = "burn";
-        await checkTokenId();
-      }
-    } catch (e) {
-      console.log(e);
-    } finally {
-      checkButton.ariaDisabled = null;
     }
   }
 });
